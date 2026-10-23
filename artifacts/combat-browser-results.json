@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "stats": {
+    "time": 43.86666666666674,
+    "assists": 13,
+    "interrupts": 1,
+    "bursts": 3,
+    "barrels": 2,
+    "manualLoot": 7
+  },
+  "viewports": [
+    "375x667",
+    "1280x720",
+    "320x568"
+  ],
+  "errors": []
+}

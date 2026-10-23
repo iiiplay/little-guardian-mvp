@@ -1,0 +1,23 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
+const {E,Q,createGame}=vm.runInNewContext(['engine/engine.js','src/driver.js','src/equipment.js','src/core.js'].map(f=>fs.readFileSync(f,'utf8')).join('\n')+'\n({E:DungeonEngine,Q:Equipment,createGame})',{console,structuredClone});
+let count=0;function check(v,msg){assert(v,msg);count++;}
+const enemy=(id,x,y,hp=100)=>({id,x,y,type:'slime',hp,maxHp:hp,atk:100,warning:0,flash:0,face:1,moving:false});
+function scene(gear){const s=E.begin(1,{},123,gear);s.wave=1;s.hero.x=6.5;s.hero.y=10.5;s.hero.hp=60;s.enemies=[enemy(1,7.2,10.5),enemy(2,9.2,10.5),enemy(3,10.2,10.5),enemy(4,2.5,2.5)];return s;}
+const life=scene({lifesteal:.2});E.step(life,1/30);check(Math.abs(life.hero.hp-61.2)<1e-8,'lifesteal heals actual attack damage');check(life.events.some(e=>e.type==='trait'),'trait feedback emitted');
+const overkill=scene({lifesteal:.2});overkill.enemies[0].hp=1;E.step(overkill,1/30);check(Math.abs(overkill.hero.hp-60.2)<1e-8,'overkill cannot inflate healing');
+const full=scene({lifesteal:1});full.hero.hp=full.hero.maxHp;E.step(full,1/30);check(full.hero.hp===full.hero.maxHp,'lifesteal capped to max health');
+const chain=scene({chain:.5});for(let i=0;i<2;i++){chain.hero.atk=0;E.step(chain,1/30);}check(chain.enemies[1].hp===100,'no chain before third attack');chain.hero.atk=0;E.step(chain,1/30);check(chain.enemies[1].hp===97&&chain.enemies[2].hp===97,'third attack jumps to two nearby enemies');check(chain.enemies[3].hp===100,'chain has a range limit');check(chain.effects.filter(f=>f.kind==='lightning').length===2,'lightning visual lines emitted');
+const thorn=scene({thorns:4});thorn.hero.atk=100;thorn.enemies[0].warning=.01;E.step(thorn,1/30);check(thorn.enemies[0].hp===96&&thorn.hero.hp<60,'incoming hit reflects damage');
+const shield=scene({thorns:4});shield.hero.atk=100;shield.hero.shield=2;shield.enemies[0].warning=.01;E.step(shield,1/30);check(shield.enemies[0].hp===100&&shield.hero.hp===60,'invulnerable hit does not reflect');
+const trap=E.begin(4,{},123,{thorns:9});trap.hero.x=4.5;trap.hero.y=6.5;trap.time=3.6-4.5*.27;trap.wave=1;trap.enemies=[enemy(1,10.5,2.5)];E.step(trap,.04);check(trap.enemies[0].hp===100,'terrain damage never reflects to random enemy');
+const wave=scene({waveHeal:10});wave.enemies=[enemy(1,7.2,10.5,1)];E.step(wave,1/30);check(wave.hero.hp===82,'wave charm adds 10 to base 12 healing');
+const dying=scene({thorns:100,waveHeal:100});dying.hero.hp=.1;dying.hero.atk=100;dying.enemies=[enemy(1,7.2,10.5)];dying.enemies[0].warning=.01;E.step(dying,1/30);check(dying.status==='lose'&&dying.hero.hp===0,'reflection plus wave heal cannot resurrect fallen hero');
+const fallen=scene({thorns:100});fallen.hero.hp=.1;fallen.hero.atk=100;fallen.enemies=[enemy(1,7.2,10.5)];fallen.enemies[0].warning=.01;fallen.loot.push({id:999,x:6,y:10,kind:'potion',amount:12,age:8});E.step(fallen,1/30);check(fallen.status==='lose','automatic potion cannot resurrect a fallen hero');
+const old={version:2,unlocked:3,cleared:[1,2],perks:{power:2},gold:100,inventory:[{id:1,slot:'weapon',rarity:1,level:2},{id:2,slot:'armor',rarity:0,level:1},{id:3,slot:'charm',rarity:2,level:1}],equipped:{weapon:1,armor:2,charm:3}};
+const migrated=createGame({engine:E,store:{getItem:()=>JSON.stringify(old),setItem(){}}});check(migrated.save.version===4&&migrated.save.gold===100&&migrated.save.unlocked===3,'schema 2 migration preserves economy and progress');migrated.start(3);check(migrated.run.hero.lifesteal>0&&migrated.run.hero.thorns>0&&migrated.run.hero.waveHeal>0,'existing equipped items awaken with valid traits');migrated.unequip('weapon');check(migrated.run.hero.lifesteal===0,'unequip removes trait');
+const invalid=Q.normalize([{id:8,slot:'armor',rarity:0,level:1,trait:'chain'}],{armor:8});check(invalid.inventory[0].trait==='thorns','cross-slot trait rejected');
+check(Q.roll(1,5,()=>0).rarity>=2,'every fifth item guarantees at least rare');check(Q.roll(10,11,()=>0).rarity>=2,'boss chest guarantees at least rare');
+for(const trait of ['lifesteal','chain'])for(let level=1;level<=10;level++){
+ const item={id:1,slot:'weapon',rarity:1,level,trait};const s=E.begin(level,{power:level-1},level*17,Q.stats(item));let ticks=0;while(s.status==='play'&&ticks++<9000){if(s.hero.hp<66)E.rescue(s);E.step(s,1/30);s.events.length=0;}check(s.status==='win'&&s.time<300,`${trait} stage ${level} completes under five minutes`);
+}
+console.log(`PASS: ${count} trait, migration, pity and full-stage build checks.`);

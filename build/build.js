@@ -11,8 +11,11 @@ const sources = {
   EQUIPMENT_JS: read('src/equipment.js'),
   CORE_JS: read('src/core.js'),
   RENDER_JS: read('src/render.js'),
+  AUDIO_JS: read('src/audio.js'),
   UI_JS: read('src/ui.js'),
   GEAR_UI_JS: read('src/gear-ui.js'),
+  TREASURE_UI_JS: read('src/treasure-ui.js'),
+  FORGE_UI_JS: read('src/forge-ui.js'),
 };
 
 let output = read('src/template.html');

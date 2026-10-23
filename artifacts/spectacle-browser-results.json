@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "layout": {
+    "stage": {
+      "x": 8,
+      "y": 122.03125,
+      "width": 359,
+      "height": 413.921875,
+      "top": 122.03125,
+      "right": 367,
+      "bottom": 535.953125,
+      "left": 8
+    },
+    "button": {
+      "x": 8,
+      "y": 585.953125,
+      "width": 135.3125,
+      "height": 56,
+      "top": 585.953125,
+      "right": 143.3125,
+      "bottom": 641.953125,
+      "left": 8
+    },
+    "height": 667,
+    "width": 375
+  },
+  "stats": {
+    "assists": 6,
+    "interrupts": 0,
+    "bursts": 1,
+    "barrels": 0,
+    "ultimates": 2
+  },
+  "errors": []
+}

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "errors": [],
+  "flows": [
+    "rare guarantee",
+    "manual reveal",
+    "pause",
+    "quick equip",
+    "reload with trait",
+    "automatic reveal dismissal"
+  ],
+  "viewports": [
+    "375x667",
+    "320x568",
+    "1280x720"
+  ]
+}

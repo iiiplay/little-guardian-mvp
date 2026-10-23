@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "errors": [],
+  "flows": [
+    "tap enemy assist",
+    "cooldown UI",
+    "forge preview",
+    "consume two weapons",
+    "retain trait",
+    "equip result",
+    "save reload",
+    "missing material"
+  ],
+  "viewports": [
+    "375x667",
+    "320x568",
+    "1280x720"
+  ]
+}
