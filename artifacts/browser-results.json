@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "viewports": [
+    "375x667",
+    "1280x720"
+  ],
+  "flows": [
+    "start",
+    "real-time stage clear at 2x",
+    "rescue and cooldown",
+    "pause and resume",
+    "upgrade",
+    "background pause",
+    "level locks",
+    "respec",
+    "reload save",
+    "loss and retry",
+    "portable file"
+  ],
+  "errors": []
+}

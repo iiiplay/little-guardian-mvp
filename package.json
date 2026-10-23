@@ -1,0 +1,12 @@
+{
+  "name": "little-guardian-mvp",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "build": "node build/build.js",
+    "test": "node tests/smoke_test.js && node tests/equipment_test.cjs"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

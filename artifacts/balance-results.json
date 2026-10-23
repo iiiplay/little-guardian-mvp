@@ -1,0 +1,727 @@
+{
+  "runs": 120,
+  "minSeconds": 54.6,
+  "maxSeconds": 75.7,
+  "samples": [
+    {
+      "level": 1,
+      "seed": 1,
+      "seconds": 54.6,
+      "hp": 120
+    },
+    {
+      "level": 2,
+      "seed": 1,
+      "seconds": 65.2,
+      "hp": 113.2
+    },
+    {
+      "level": 3,
+      "seed": 1,
+      "seconds": 61.6,
+      "hp": 120
+    },
+    {
+      "level": 4,
+      "seed": 1,
+      "seconds": 64.7,
+      "hp": 115.2
+    },
+    {
+      "level": 5,
+      "seed": 1,
+      "seconds": 62.9,
+      "hp": 113.4
+    },
+    {
+      "level": 6,
+      "seed": 1,
+      "seconds": 63.3,
+      "hp": 97.2
+    },
+    {
+      "level": 7,
+      "seed": 1,
+      "seconds": 70.8,
+      "hp": 120
+    },
+    {
+      "level": 8,
+      "seed": 1,
+      "seconds": 69.8,
+      "hp": 120
+    },
+    {
+      "level": 9,
+      "seed": 1,
+      "seconds": 70.1,
+      "hp": 99
+    },
+    {
+      "level": 10,
+      "seed": 1,
+      "seconds": 75.7,
+      "hp": 101.2
+    },
+    {
+      "level": 1,
+      "seed": 2,
+      "seconds": 54.6,
+      "hp": 120
+    },
+    {
+      "level": 2,
+      "seed": 2,
+      "seconds": 65.2,
+      "hp": 113.2
+    },
+    {
+      "level": 3,
+      "seed": 2,
+      "seconds": 61.6,
+      "hp": 117
+    },
+    {
+      "level": 4,
+      "seed": 2,
+      "seconds": 64.7,
+      "hp": 115.2
+    },
+    {
+      "level": 5,
+      "seed": 2,
+      "seconds": 62.9,
+      "hp": 110
+    },
+    {
+      "level": 6,
+      "seed": 2,
+      "seconds": 63.3,
+      "hp": 97.2
+    },
+    {
+      "level": 7,
+      "seed": 2,
+      "seconds": 70.8,
+      "hp": 120
+    },
+    {
+      "level": 8,
+      "seed": 2,
+      "seconds": 69.8,
+      "hp": 120
+    },
+    {
+      "level": 9,
+      "seed": 2,
+      "seconds": 70.1,
+      "hp": 99
+    },
+    {
+      "level": 10,
+      "seed": 2,
+      "seconds": 75.7,
+      "hp": 114.4
+    },
+    {
+      "level": 1,
+      "seed": 3,
+      "seconds": 54.6,
+      "hp": 120
+    },
+    {
+      "level": 2,
+      "seed": 3,
+      "seconds": 65.2,
+      "hp": 113.2
+    },
+    {
+      "level": 3,
+      "seed": 3,
+      "seconds": 61.6,
+      "hp": 117
+    },
+    {
+      "level": 4,
+      "seed": 3,
+      "seconds": 64.7,
+      "hp": 115.2
+    },
+    {
+      "level": 5,
+      "seed": 3,
+      "seconds": 62.9,
+      "hp": 110
+    },
+    {
+      "level": 6,
+      "seed": 3,
+      "seconds": 63.3,
+      "hp": 97.2
+    },
+    {
+      "level": 7,
+      "seed": 3,
+      "seconds": 70.8,
+      "hp": 120
+    },
+    {
+      "level": 8,
+      "seed": 3,
+      "seconds": 69.8,
+      "hp": 120
+    },
+    {
+      "level": 9,
+      "seed": 3,
+      "seconds": 70.1,
+      "hp": 94.8
+    },
+    {
+      "level": 10,
+      "seed": 3,
+      "seconds": 75.7,
+      "hp": 101.2
+    },
+    {
+      "level": 1,
+      "seed": 4,
+      "seconds": 54.6,
+      "hp": 120
+    },
+    {
+      "level": 2,
+      "seed": 4,
+      "seconds": 65.2,
+      "hp": 116
+    },
+    {
+      "level": 3,
+      "seed": 4,
+      "seconds": 61.6,
+      "hp": 117
+    },
+    {
+      "level": 4,
+      "seed": 4,
+      "seconds": 64.7,
+      "hp": 115.2
+    },
+    {
+      "level": 5,
+      "seed": 4,
+      "seconds": 62.9,
+      "hp": 113.4
+    },
+    {
+      "level": 6,
+      "seed": 4,
+      "seconds": 63.3,
+      "hp": 97.2
+    },
+    {
+      "level": 7,
+      "seed": 4,
+      "seconds": 70.8,
+      "hp": 120
+    },
+    {
+      "level": 8,
+      "seed": 4,
+      "seconds": 69.8,
+      "hp": 120
+    },
+    {
+      "level": 9,
+      "seed": 4,
+      "seconds": 70.1,
+      "hp": 94.8
+    },
+    {
+      "level": 10,
+      "seed": 4,
+      "seconds": 75.7,
+      "hp": 105.6
+    },
+    {
+      "level": 1,
+      "seed": 5,
+      "seconds": 54.6,
+      "hp": 120
+    },
+    {
+      "level": 2,
+      "seed": 5,
+      "seconds": 65.2,
+      "hp": 113.2
+    },
+    {
+      "level": 3,
+      "seed": 5,
+      "seconds": 61.6,
+      "hp": 117
+    },
+    {
+      "level": 4,
+      "seed": 5,
+      "seconds": 64.7,
+      "hp": 115.2
+    },
+    {
+      "level": 5,
+      "seed": 5,
+      "seconds": 62.9,
+      "hp": 110
+    },
+    {
+      "level": 6,
+      "seed": 5,
+      "seconds": 63.3,
+      "hp": 97.2
+    },
+    {
+      "level": 7,
+      "seed": 5,
+      "seconds": 70.8,
+      "hp": 120
+    },
+    {
+      "level": 8,
+      "seed": 5,
+      "seconds": 69.8,
+      "hp": 120
+    },
+    {
+      "level": 9,
+      "seed": 5,
+      "seconds": 70.1,
+      "hp": 94.8
+    },
+    {
+      "level": 10,
+      "seed": 5,
+      "seconds": 75.7,
+      "hp": 110
+    },
+    {
+      "level": 1,
+      "seed": 6,
+      "seconds": 54.6,
+      "hp": 120
+    },
+    {
+      "level": 2,
+      "seed": 6,
+      "seconds": 65.2,
+      "hp": 113.2
+    },
+    {
+      "level": 3,
+      "seed": 6,
+      "seconds": 61.6,
+      "hp": 117
+    },
+    {
+      "level": 4,
+      "seed": 6,
+      "seconds": 64.7,
+      "hp": 115.2
+    },
+    {
+      "level": 5,
+      "seed": 6,
+      "seconds": 62.9,
+      "hp": 110
+    },
+    {
+      "level": 6,
+      "seed": 6,
+      "seconds": 63.3,
+      "hp": 97.2
+    },
+    {
+      "level": 7,
+      "seed": 6,
+      "seconds": 70.8,
+      "hp": 120
+    },
+    {
+      "level": 8,
+      "seed": 6,
+      "seconds": 69.8,
+      "hp": 120
+    },
+    {
+      "level": 9,
+      "seed": 6,
+      "seconds": 70.1,
+      "hp": 99
+    },
+    {
+      "level": 10,
+      "seed": 6,
+      "seconds": 75.7,
+      "hp": 105.6
+    },
+    {
+      "level": 1,
+      "seed": 7,
+      "seconds": 54.6,
+      "hp": 120
+    },
+    {
+      "level": 2,
+      "seed": 7,
+      "seconds": 65.2,
+      "hp": 116
+    },
+    {
+      "level": 3,
+      "seed": 7,
+      "seconds": 61.6,
+      "hp": 120
+    },
+    {
+      "level": 4,
+      "seed": 7,
+      "seconds": 64.7,
+      "hp": 115.2
+    },
+    {
+      "level": 5,
+      "seed": 7,
+      "seconds": 62.9,
+      "hp": 110
+    },
+    {
+      "level": 6,
+      "seed": 7,
+      "seconds": 63.3,
+      "hp": 97.2
+    },
+    {
+      "level": 7,
+      "seed": 7,
+      "seconds": 70.8,
+      "hp": 120
+    },
+    {
+      "level": 8,
+      "seed": 7,
+      "seconds": 69.8,
+      "hp": 120
+    },
+    {
+      "level": 9,
+      "seed": 7,
+      "seconds": 70.1,
+      "hp": 94.8
+    },
+    {
+      "level": 10,
+      "seed": 7,
+      "seconds": 75.7,
+      "hp": 105.6
+    },
+    {
+      "level": 1,
+      "seed": 8,
+      "seconds": 54.6,
+      "hp": 120
+    },
+    {
+      "level": 2,
+      "seed": 8,
+      "seconds": 65.2,
+      "hp": 116
+    },
+    {
+      "level": 3,
+      "seed": 8,
+      "seconds": 61.6,
+      "hp": 120
+    },
+    {
+      "level": 4,
+      "seed": 8,
+      "seconds": 64.7,
+      "hp": 115.2
+    },
+    {
+      "level": 5,
+      "seed": 8,
+      "seconds": 62.9,
+      "hp": 110
+    },
+    {
+      "level": 6,
+      "seed": 8,
+      "seconds": 63.3,
+      "hp": 97.2
+    },
+    {
+      "level": 7,
+      "seed": 8,
+      "seconds": 70.8,
+      "hp": 120
+    },
+    {
+      "level": 8,
+      "seed": 8,
+      "seconds": 69.8,
+      "hp": 120
+    },
+    {
+      "level": 9,
+      "seed": 8,
+      "seconds": 70.1,
+      "hp": 94.8
+    },
+    {
+      "level": 10,
+      "seed": 8,
+      "seconds": 75.7,
+      "hp": 101.2
+    },
+    {
+      "level": 1,
+      "seed": 9,
+      "seconds": 54.6,
+      "hp": 120
+    },
+    {
+      "level": 2,
+      "seed": 9,
+      "seconds": 65.2,
+      "hp": 116
+    },
+    {
+      "level": 3,
+      "seed": 9,
+      "seconds": 61.6,
+      "hp": 117
+    },
+    {
+      "level": 4,
+      "seed": 9,
+      "seconds": 64.7,
+      "hp": 115.2
+    },
+    {
+      "level": 5,
+      "seed": 9,
+      "seconds": 62.9,
+      "hp": 113.4
+    },
+    {
+      "level": 6,
+      "seed": 9,
+      "seconds": 63.3,
+      "hp": 97.2
+    },
+    {
+      "level": 7,
+      "seed": 9,
+      "seconds": 70.8,
+      "hp": 120
+    },
+    {
+      "level": 8,
+      "seed": 9,
+      "seconds": 69.8,
+      "hp": 120
+    },
+    {
+      "level": 9,
+      "seed": 9,
+      "seconds": 70.1,
+      "hp": 99
+    },
+    {
+      "level": 10,
+      "seed": 9,
+      "seconds": 75.7,
+      "hp": 114.4
+    },
+    {
+      "level": 1,
+      "seed": 10,
+      "seconds": 54.6,
+      "hp": 120
+    },
+    {
+      "level": 2,
+      "seed": 10,
+      "seconds": 65.2,
+      "hp": 116
+    },
+    {
+      "level": 3,
+      "seed": 10,
+      "seconds": 61.6,
+      "hp": 120
+    },
+    {
+      "level": 4,
+      "seed": 10,
+      "seconds": 64.7,
+      "hp": 115.2
+    },
+    {
+      "level": 5,
+      "seed": 10,
+      "seconds": 62.9,
+      "hp": 110
+    },
+    {
+      "level": 6,
+      "seed": 10,
+      "seconds": 63.3,
+      "hp": 97.2
+    },
+    {
+      "level": 7,
+      "seed": 10,
+      "seconds": 70.8,
+      "hp": 120
+    },
+    {
+      "level": 8,
+      "seed": 10,
+      "seconds": 69.8,
+      "hp": 120
+    },
+    {
+      "level": 9,
+      "seed": 10,
+      "seconds": 70.1,
+      "hp": 99
+    },
+    {
+      "level": 10,
+      "seed": 10,
+      "seconds": 75.7,
+      "hp": 114.4
+    },
+    {
+      "level": 1,
+      "seed": 11,
+      "seconds": 54.6,
+      "hp": 120
+    },
+    {
+      "level": 2,
+      "seed": 11,
+      "seconds": 65.2,
+      "hp": 113.2
+    },
+    {
+      "level": 3,
+      "seed": 11,
+      "seconds": 61.6,
+      "hp": 117
+    },
+    {
+      "level": 4,
+      "seed": 11,
+      "seconds": 64.7,
+      "hp": 115.2
+    },
+    {
+      "level": 5,
+      "seed": 11,
+      "seconds": 62.9,
+      "hp": 113.4
+    },
+    {
+      "level": 6,
+      "seed": 11,
+      "seconds": 63.3,
+      "hp": 97.2
+    },
+    {
+      "level": 7,
+      "seed": 11,
+      "seconds": 70.8,
+      "hp": 120
+    },
+    {
+      "level": 8,
+      "seed": 11,
+      "seconds": 69.8,
+      "hp": 120
+    },
+    {
+      "level": 9,
+      "seed": 11,
+      "seconds": 70.1,
+      "hp": 99
+    },
+    {
+      "level": 10,
+      "seed": 11,
+      "seconds": 75.7,
+      "hp": 101.2
+    },
+    {
+      "level": 1,
+      "seed": 12,
+      "seconds": 54.6,
+      "hp": 120
+    },
+    {
+      "level": 2,
+      "seed": 12,
+      "seconds": 65.2,
+      "hp": 116
+    },
+    {
+      "level": 3,
+      "seed": 12,
+      "seconds": 61.6,
+      "hp": 117
+    },
+    {
+      "level": 4,
+      "seed": 12,
+      "seconds": 64.7,
+      "hp": 115.2
+    },
+    {
+      "level": 5,
+      "seed": 12,
+      "seconds": 62.9,
+      "hp": 110
+    },
+    {
+      "level": 6,
+      "seed": 12,
+      "seconds": 63.3,
+      "hp": 97.2
+    },
+    {
+      "level": 7,
+      "seed": 12,
+      "seconds": 70.8,
+      "hp": 120
+    },
+    {
+      "level": 8,
+      "seed": 12,
+      "seconds": 69.8,
+      "hp": 120
+    },
+    {
+      "level": 9,
+      "seed": 12,
+      "seconds": 70.1,
+      "hp": 94.8
+    },
+    {
+      "level": 10,
+      "seed": 12,
+      "seconds": 75.7,
+      "hp": 110
+    }
+  ]
+}
