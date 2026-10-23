@@ -1,10 +1,10 @@
 {
   "name": "little-guardian-mvp",
-  "version": "0.6.0",
+  "version": "0.9.0",
   "private": true,
   "scripts": {
     "build": "node build/build.js",
-    "test": "node tests/smoke_test.js && node tests/equipment_test.cjs && node tests/traits_test.cjs && node tests/forge_assist_test.cjs && node tests/combat_test.cjs && node tests/spectacle_test.cjs"
+    "test": "node tests/smoke_test.js && node tests/equipment_test.cjs && node tests/traits_test.cjs && node tests/forge_assist_test.cjs && node tests/combat_test.cjs && node tests/spectacle_test.cjs && node tests/difficulty_regression.cjs && node tests/spirits_test.cjs && node tests/campaign20_test.cjs"
   },
   "engines": {
     "node": ">=20.0.0"

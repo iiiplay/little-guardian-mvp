@@ -1,0 +1,1645 @@
+{
+  "passed": true,
+  "summary": [
+    {
+      "mode": "watch",
+      "runs": 60,
+      "wins": 1,
+      "rescues": 0
+    },
+    {
+      "mode": "rescue",
+      "runs": 60,
+      "wins": 49,
+      "rescues": 118
+    },
+    {
+      "mode": "active",
+      "runs": 60,
+      "wins": 60,
+      "rescues": 0
+    }
+  ],
+  "runs": [
+    {
+      "level": 11,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 52.2,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 11,
+      "seed": 1,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 74.9,
+      "minRatio": 0.343,
+      "rescues": 2
+    },
+    {
+      "level": 11,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 26.3,
+      "minRatio": 0.912,
+      "rescues": 0
+    },
+    {
+      "level": 11,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 52.1,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 11,
+      "seed": 2,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 76.6,
+      "minRatio": 0.501,
+      "rescues": 2
+    },
+    {
+      "level": 11,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 26.3,
+      "minRatio": 0.912,
+      "rescues": 0
+    },
+    {
+      "level": 11,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 53,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 11,
+      "seed": 3,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 75.3,
+      "minRatio": 0.421,
+      "rescues": 2
+    },
+    {
+      "level": 11,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 26.3,
+      "minRatio": 0.912,
+      "rescues": 0
+    },
+    {
+      "level": 11,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 51.3,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 11,
+      "seed": 4,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 75.8,
+      "minRatio": 0.539,
+      "rescues": 2
+    },
+    {
+      "level": 11,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 26.3,
+      "minRatio": 0.912,
+      "rescues": 0
+    },
+    {
+      "level": 11,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 52.1,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 11,
+      "seed": 5,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 77,
+      "minRatio": 0.494,
+      "rescues": 2
+    },
+    {
+      "level": 11,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.4,
+      "minRatio": 0.912,
+      "rescues": 0
+    },
+    {
+      "level": 11,
+      "seed": 6,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 53.8,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 11,
+      "seed": 6,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 75,
+      "minRatio": 0.391,
+      "rescues": 2
+    },
+    {
+      "level": 11,
+      "seed": 6,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.4,
+      "minRatio": 0.912,
+      "rescues": 0
+    },
+    {
+      "level": 12,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 51.3,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 12,
+      "seed": 1,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 74.3,
+      "minRatio": 0.5,
+      "rescues": 2
+    },
+    {
+      "level": 12,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23,
+      "minRatio": 0.968,
+      "rescues": 0
+    },
+    {
+      "level": 12,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 54,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 12,
+      "seed": 2,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 73.4,
+      "minRatio": 0.502,
+      "rescues": 2
+    },
+    {
+      "level": 12,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.5,
+      "minRatio": 0.968,
+      "rescues": 0
+    },
+    {
+      "level": 12,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 51.3,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 12,
+      "seed": 3,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 72.5,
+      "minRatio": 0.492,
+      "rescues": 2
+    },
+    {
+      "level": 12,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23,
+      "minRatio": 0.968,
+      "rescues": 0
+    },
+    {
+      "level": 12,
+      "seed": 4,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 72.5,
+      "minRatio": 0.015,
+      "rescues": 0
+    },
+    {
+      "level": 12,
+      "seed": 4,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 72.3,
+      "minRatio": 0.535,
+      "rescues": 2
+    },
+    {
+      "level": 12,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.5,
+      "minRatio": 0.968,
+      "rescues": 0
+    },
+    {
+      "level": 12,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 51.7,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 12,
+      "seed": 5,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 73.1,
+      "minRatio": 0.502,
+      "rescues": 2
+    },
+    {
+      "level": 12,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.5,
+      "minRatio": 0.968,
+      "rescues": 0
+    },
+    {
+      "level": 12,
+      "seed": 6,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 50.8,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 12,
+      "seed": 6,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 72,
+      "minRatio": 0.487,
+      "rescues": 2
+    },
+    {
+      "level": 12,
+      "seed": 6,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23,
+      "minRatio": 0.968,
+      "rescues": 0
+    },
+    {
+      "level": 13,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 38.5,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 13,
+      "seed": 1,
+      "mode": "rescue",
+      "status": "lose",
+      "seconds": 56.1,
+      "minRatio": 0,
+      "rescues": 2
+    },
+    {
+      "level": 13,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 27.6,
+      "minRatio": 0.806,
+      "rescues": 0
+    },
+    {
+      "level": 13,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 48.8,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 13,
+      "seed": 2,
+      "mode": "rescue",
+      "status": "lose",
+      "seconds": 56.4,
+      "minRatio": 0,
+      "rescues": 2
+    },
+    {
+      "level": 13,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 27.6,
+      "minRatio": 0.806,
+      "rescues": 0
+    },
+    {
+      "level": 13,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 34.9,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 13,
+      "seed": 3,
+      "mode": "rescue",
+      "status": "lose",
+      "seconds": 53.9,
+      "minRatio": 0,
+      "rescues": 2
+    },
+    {
+      "level": 13,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 27.6,
+      "minRatio": 0.806,
+      "rescues": 0
+    },
+    {
+      "level": 13,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 48.4,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 13,
+      "seed": 4,
+      "mode": "rescue",
+      "status": "lose",
+      "seconds": 56.4,
+      "minRatio": 0,
+      "rescues": 2
+    },
+    {
+      "level": 13,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 27.6,
+      "minRatio": 0.806,
+      "rescues": 0
+    },
+    {
+      "level": 13,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 34.4,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 13,
+      "seed": 5,
+      "mode": "rescue",
+      "status": "lose",
+      "seconds": 51.7,
+      "minRatio": 0,
+      "rescues": 2
+    },
+    {
+      "level": 13,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 27.6,
+      "minRatio": 0.806,
+      "rescues": 0
+    },
+    {
+      "level": 13,
+      "seed": 6,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 34.5,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 13,
+      "seed": 6,
+      "mode": "rescue",
+      "status": "lose",
+      "seconds": 51.8,
+      "minRatio": 0,
+      "rescues": 2
+    },
+    {
+      "level": 13,
+      "seed": 6,
+      "mode": "active",
+      "status": "win",
+      "seconds": 27.6,
+      "minRatio": 0.806,
+      "rescues": 0
+    },
+    {
+      "level": 14,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 52.5,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 14,
+      "seed": 1,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 73.9,
+      "minRatio": 0.182,
+      "rescues": 2
+    },
+    {
+      "level": 14,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.7,
+      "minRatio": 0.902,
+      "rescues": 0
+    },
+    {
+      "level": 14,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 34.9,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 14,
+      "seed": 2,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 75.2,
+      "minRatio": 0.08,
+      "rescues": 2
+    },
+    {
+      "level": 14,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.7,
+      "minRatio": 0.902,
+      "rescues": 0
+    },
+    {
+      "level": 14,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 52.9,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 14,
+      "seed": 3,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 77.6,
+      "minRatio": 0.538,
+      "rescues": 2
+    },
+    {
+      "level": 14,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.7,
+      "minRatio": 0.902,
+      "rescues": 0
+    },
+    {
+      "level": 14,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 49.8,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 14,
+      "seed": 4,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 75.2,
+      "minRatio": 0.015,
+      "rescues": 2
+    },
+    {
+      "level": 14,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.7,
+      "minRatio": 0.902,
+      "rescues": 0
+    },
+    {
+      "level": 14,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 53,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 14,
+      "seed": 5,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 74.6,
+      "minRatio": 0.321,
+      "rescues": 2
+    },
+    {
+      "level": 14,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.7,
+      "minRatio": 0.902,
+      "rescues": 0
+    },
+    {
+      "level": 14,
+      "seed": 6,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 56.8,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 14,
+      "seed": 6,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 75.7,
+      "minRatio": 0.457,
+      "rescues": 2
+    },
+    {
+      "level": 14,
+      "seed": 6,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.7,
+      "minRatio": 0.902,
+      "rescues": 0
+    },
+    {
+      "level": 15,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 50.9,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 15,
+      "seed": 1,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 70.1,
+      "minRatio": 0.444,
+      "rescues": 2
+    },
+    {
+      "level": 15,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.5,
+      "minRatio": 0.969,
+      "rescues": 0
+    },
+    {
+      "level": 15,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 45.6,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 15,
+      "seed": 2,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 69.5,
+      "minRatio": 0.484,
+      "rescues": 2
+    },
+    {
+      "level": 15,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.5,
+      "minRatio": 0.969,
+      "rescues": 0
+    },
+    {
+      "level": 15,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 48.5,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 15,
+      "seed": 3,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 71.4,
+      "minRatio": 0.503,
+      "rescues": 2
+    },
+    {
+      "level": 15,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.5,
+      "minRatio": 0.969,
+      "rescues": 0
+    },
+    {
+      "level": 15,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 34,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 15,
+      "seed": 4,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 71.8,
+      "minRatio": 0.506,
+      "rescues": 2
+    },
+    {
+      "level": 15,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.6,
+      "minRatio": 0.969,
+      "rescues": 0
+    },
+    {
+      "level": 15,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 34.8,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 15,
+      "seed": 5,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 72.9,
+      "minRatio": 0.511,
+      "rescues": 2
+    },
+    {
+      "level": 15,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.3,
+      "minRatio": 0.897,
+      "rescues": 0
+    },
+    {
+      "level": 15,
+      "seed": 6,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 33.7,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 15,
+      "seed": 6,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 73,
+      "minRatio": 0.512,
+      "rescues": 2
+    },
+    {
+      "level": 15,
+      "seed": 6,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.6,
+      "minRatio": 0.969,
+      "rescues": 0
+    },
+    {
+      "level": 16,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 48.5,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 16,
+      "seed": 1,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 70.3,
+      "minRatio": 0.417,
+      "rescues": 2
+    },
+    {
+      "level": 16,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.9,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "level": 16,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 48.5,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 16,
+      "seed": 2,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 71.1,
+      "minRatio": 0.468,
+      "rescues": 2
+    },
+    {
+      "level": 16,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.9,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "level": 16,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 49.9,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 16,
+      "seed": 3,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 70.3,
+      "minRatio": 0.448,
+      "rescues": 2
+    },
+    {
+      "level": 16,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23,
+      "minRatio": 0.969,
+      "rescues": 0
+    },
+    {
+      "level": 16,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 48.7,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 16,
+      "seed": 4,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 70.4,
+      "minRatio": 0.356,
+      "rescues": 2
+    },
+    {
+      "level": 16,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.9,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "level": 16,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 50.4,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 16,
+      "seed": 5,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 70.9,
+      "minRatio": 0.434,
+      "rescues": 2
+    },
+    {
+      "level": 16,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23,
+      "minRatio": 0.969,
+      "rescues": 0
+    },
+    {
+      "level": 16,
+      "seed": 6,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 46.6,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 16,
+      "seed": 6,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 70.3,
+      "minRatio": 0.4,
+      "rescues": 2
+    },
+    {
+      "level": 16,
+      "seed": 6,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.9,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "level": 17,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 45.5,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 17,
+      "seed": 1,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 71.4,
+      "minRatio": 0.486,
+      "rescues": 2
+    },
+    {
+      "level": 17,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24,
+      "minRatio": 0.893,
+      "rescues": 0
+    },
+    {
+      "level": 17,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 49.6,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 17,
+      "seed": 2,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 71.7,
+      "minRatio": 0.338,
+      "rescues": 2
+    },
+    {
+      "level": 17,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.6,
+      "minRatio": 0.97,
+      "rescues": 0
+    },
+    {
+      "level": 17,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 49.4,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 17,
+      "seed": 3,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 72.7,
+      "minRatio": 0.455,
+      "rescues": 2
+    },
+    {
+      "level": 17,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24,
+      "minRatio": 0.893,
+      "rescues": 0
+    },
+    {
+      "level": 17,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 48.4,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 17,
+      "seed": 4,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 70.5,
+      "minRatio": 0.395,
+      "rescues": 2
+    },
+    {
+      "level": 17,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24,
+      "minRatio": 0.893,
+      "rescues": 0
+    },
+    {
+      "level": 17,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 45.6,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 17,
+      "seed": 5,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 70.6,
+      "minRatio": 0.447,
+      "rescues": 2
+    },
+    {
+      "level": 17,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24,
+      "minRatio": 0.893,
+      "rescues": 0
+    },
+    {
+      "level": 17,
+      "seed": 6,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 45.7,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 17,
+      "seed": 6,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 72,
+      "minRatio": 0.474,
+      "rescues": 2
+    },
+    {
+      "level": 17,
+      "seed": 6,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.4,
+      "minRatio": 0.97,
+      "rescues": 0
+    },
+    {
+      "level": 18,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 32.9,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 18,
+      "seed": 1,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 69.4,
+      "minRatio": 0.085,
+      "rescues": 2
+    },
+    {
+      "level": 18,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.7,
+      "minRatio": 0.97,
+      "rescues": 0
+    },
+    {
+      "level": 18,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 29.4,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 18,
+      "seed": 2,
+      "mode": "rescue",
+      "status": "lose",
+      "seconds": 62.6,
+      "minRatio": 0,
+      "rescues": 2
+    },
+    {
+      "level": 18,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.4,
+      "minRatio": 0.97,
+      "rescues": 0
+    },
+    {
+      "level": 18,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 29.2,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 18,
+      "seed": 3,
+      "mode": "rescue",
+      "status": "lose",
+      "seconds": 33.6,
+      "minRatio": 0,
+      "rescues": 1
+    },
+    {
+      "level": 18,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.7,
+      "minRatio": 0.97,
+      "rescues": 0
+    },
+    {
+      "level": 18,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 29.7,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 18,
+      "seed": 4,
+      "mode": "rescue",
+      "status": "lose",
+      "seconds": 48.9,
+      "minRatio": 0,
+      "rescues": 2
+    },
+    {
+      "level": 18,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.4,
+      "minRatio": 0.97,
+      "rescues": 0
+    },
+    {
+      "level": 18,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 30.4,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 18,
+      "seed": 5,
+      "mode": "rescue",
+      "status": "lose",
+      "seconds": 34.6,
+      "minRatio": 0,
+      "rescues": 1
+    },
+    {
+      "level": 18,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.6,
+      "minRatio": 0.97,
+      "rescues": 0
+    },
+    {
+      "level": 18,
+      "seed": 6,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 38.4,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 18,
+      "seed": 6,
+      "mode": "rescue",
+      "status": "lose",
+      "seconds": 51.7,
+      "minRatio": 0,
+      "rescues": 2
+    },
+    {
+      "level": 18,
+      "seed": 6,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.4,
+      "minRatio": 0.97,
+      "rescues": 0
+    },
+    {
+      "level": 19,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 49.1,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 19,
+      "seed": 1,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 76.1,
+      "minRatio": 0.411,
+      "rescues": 2
+    },
+    {
+      "level": 19,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.5,
+      "minRatio": 0.97,
+      "rescues": 0
+    },
+    {
+      "level": 19,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 36.3,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 19,
+      "seed": 2,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 74.5,
+      "minRatio": 0.454,
+      "rescues": 2
+    },
+    {
+      "level": 19,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.5,
+      "minRatio": 0.97,
+      "rescues": 0
+    },
+    {
+      "level": 19,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 36.3,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 19,
+      "seed": 3,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 74.5,
+      "minRatio": 0.491,
+      "rescues": 2
+    },
+    {
+      "level": 19,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.5,
+      "minRatio": 0.97,
+      "rescues": 0
+    },
+    {
+      "level": 19,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 52.8,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 19,
+      "seed": 4,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 76.2,
+      "minRatio": 0.486,
+      "rescues": 2
+    },
+    {
+      "level": 19,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.5,
+      "minRatio": 0.97,
+      "rescues": 0
+    },
+    {
+      "level": 19,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 52.5,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 19,
+      "seed": 5,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 71.9,
+      "minRatio": 0.465,
+      "rescues": 2
+    },
+    {
+      "level": 19,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.5,
+      "minRatio": 0.97,
+      "rescues": 0
+    },
+    {
+      "level": 19,
+      "seed": 6,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 48.8,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 19,
+      "seed": 6,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 74.3,
+      "minRatio": 0.454,
+      "rescues": 2
+    },
+    {
+      "level": 19,
+      "seed": 6,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.5,
+      "minRatio": 0.97,
+      "rescues": 0
+    },
+    {
+      "level": 20,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 46,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 20,
+      "seed": 1,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 77.4,
+      "minRatio": 0.479,
+      "rescues": 2
+    },
+    {
+      "level": 20,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24.7,
+      "minRatio": 0.971,
+      "rescues": 0
+    },
+    {
+      "level": 20,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 33.5,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 20,
+      "seed": 2,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 75.8,
+      "minRatio": 0.421,
+      "rescues": 2
+    },
+    {
+      "level": 20,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24.7,
+      "minRatio": 0.971,
+      "rescues": 0
+    },
+    {
+      "level": 20,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 33.5,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 20,
+      "seed": 3,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 76.3,
+      "minRatio": 0.437,
+      "rescues": 2
+    },
+    {
+      "level": 20,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24.7,
+      "minRatio": 0.971,
+      "rescues": 0
+    },
+    {
+      "level": 20,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 34.2,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 20,
+      "seed": 4,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 76.8,
+      "minRatio": 0.465,
+      "rescues": 2
+    },
+    {
+      "level": 20,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.3,
+      "minRatio": 0.971,
+      "rescues": 0
+    },
+    {
+      "level": 20,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 33.3,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 20,
+      "seed": 5,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 77.1,
+      "minRatio": 0.479,
+      "rescues": 2
+    },
+    {
+      "level": 20,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 26,
+      "minRatio": 0.884,
+      "rescues": 0
+    },
+    {
+      "level": 20,
+      "seed": 6,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 47.2,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "level": 20,
+      "seed": 6,
+      "mode": "rescue",
+      "status": "win",
+      "seconds": 76.8,
+      "minRatio": 0.007,
+      "rescues": 2
+    },
+    {
+      "level": 20,
+      "seed": 6,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.3,
+      "minRatio": 0.971,
+      "rescues": 0
+    }
+  ]
+}

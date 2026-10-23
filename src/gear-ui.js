@@ -1,4 +1,19 @@
 let bagOrigin='title',bagSlot='weapon',bagPage=0,lootKey='';
+let spiritOrigin='title',spiritMode='title';
+function showSpirits(){
+  spiritOrigin=modalType;spiritMode=game.mode;autoAt=0;if(game.mode==='play')game.pause();renderSpirits();
+}
+function renderSpirits(){
+  const active=Equipment.spiritFor(game.save);
+  dialog(`<div class="spirit-dialog"><p class="eyebrow">LITTLE COMPANIONS</p><h2 id="dialog-title">守護精靈</h2><p class="spirit-help">首次通關，精靈就會加入旅程。<br>一次帶一位同伴，選擇時冒險暫停。</p><div class="spirit-list">${Object.entries(Equipment.spirits).map(([id,s])=>{const open=game.save.cleared.includes(s.level);return `<button class="spirit-card ${active===id?'selected':''}" data-spirit="${id}" aria-pressed="${active===id}" ${open?'':'disabled'} style="--spirit-color:${s.color}"><span class="spirit-orb" aria-hidden="true"><i></i></span><span><strong>${s.name} · ${id==='wind'?'疾風精靈':'幸運精靈'}</strong><small>${s.description}</small><em>${open?(active===id?'陪伴中':'已取得 · 點選陪伴'):`首次通關第 ${s.level} 關取得`}</em></span></button>`;}).join('')}</div><p class="hint">${active?'陪伴光點會繞著勇者飛行，能力立即生效。':'第 3 關獲得風芽，第 6 關獲得金穗。'}<br>幸運影響寶箱品質，不改變合成與保底。</p><button class="subtle" id="spirit-rest" ${active?'':'disabled'}>讓精靈休息</button><button class="primary" id="close-spirits">${spiritMode==='play'?'帶著同伴，繼續冒險':'返回'}</button></div>`, 'spirits');
+  $('dialog').querySelectorAll('[data-spirit]').forEach(b=>b.onclick=()=>{if(game.selectSpirit(b.dataset.spirit)){renderSpirits();update();}});
+  bind('spirit-rest',()=>{game.selectSpirit(null);renderSpirits();update();});bind('close-spirits',closeSpirits);
+}
+function closeSpirits(){
+  if(spiritMode==='play'){if(game.mode==='pause')game.pause();closeDialog();}
+  else if(spiritOrigin==='gear')renderGear();else if(spiritOrigin==='win')showWin();else if(spiritOrigin==='lose')showLose();else if(spiritOrigin==='map')showMap();else if(spiritMode==='pause')showPause();else showTitle();lastMode=game.mode;update();
+}
+bind('companion',showSpirits);
 const escapeHtml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function showGear(){bagOrigin=game.mode;autoAt=0;toastUntil=0;$('toast').hidden=true;if(game.mode==='play')game.pause();lastMode=game.mode;bagPage=0;const latest=game.save.inventory.at(-1);bagSlot=latest?.slot||'weapon';renderGear();}
 function closeGear(){if(bagOrigin==='play'){if(game.mode==='pause')game.pause();closeDialog();}else if(bagOrigin==='pause')showPause();else if(bagOrigin==='win')showWin();else if(bagOrigin==='lose')showLose();else showTitle();lastMode=game.mode;update();}
@@ -17,7 +32,7 @@ function updateLootTargets(){
   const key=active?[s.cfg.id,s.barrels.filter(b=>b.hp>0).map(b=>b.id).join(','),s.chest,s.kills>=s.cfg.count,s.loot.map(d=>d.id).join(','),s.enemies.filter(e=>e.hp>0).map(e=>e.id).join(',')].join('|'):'inactive';if(key===lootKey)return;lootKey=key;
   const root=$('loot-targets');root.innerHTML='';if(!active)return;
   function target(x,y,label,classes,handler){const b=document.createElement('button');b.className='loot-target '+classes;b.dataset.x=x;b.dataset.y=y;b.style.left=(x/13*100)+'%';b.style.top=(y/15*100)+'%';b.setAttribute('aria-label',label);b.title=label;b.onclick=handler;root.appendChild(b);return b;}
-  for(const e of s.enemies.filter(e=>e.hp>0)){const name=e.boss?'史萊姆頭目':e.type==='slime'?'史萊姆':e.type==='goblin'?'哥布林':'飛行怪';const b=target(e.x,e.y,`星光補刀：${name} #${e.id}`,'assist-target',()=>{if(game.assist(e.id)){update();}});b.dataset.enemyId=e.id;b.disabled=s.assistCharges<=0||s.assistCooldown>0;}
+  for(const e of s.enemies.filter(e=>e.hp>0)){const name=e.boss?(e.type==='skeleton'?'骸骨守林者':'史萊姆頭目'):e.type==='skeleton'?'骸骨巡守':e.type==='ranger'?'林地弓手':e.type==='slime'?'史萊姆':e.type==='goblin'?'哥布林':'飛行怪';const b=target(e.x,e.y,`星光補刀：${name} #${e.id}`,'assist-target',()=>{if(game.assist(e.id)){update();}});b.dataset.enemyId=e.id;b.disabled=s.assistCharges<=0||s.assistCooldown>0;}
   for(const b of s.barrels.filter(b=>b.hp>0)){const el=target(b.x,b.y,'引爆炸藥桶 #'+b.id,'barrel-target',()=>{if(game.detonate(b.id))update();});el.innerHTML='<span>引爆</span>';}
   if(!s.chest){const ready=s.kills>=s.cfg.count;const b=target(10.5,4.5,ready?'開啟寶箱，獲得裝備':'寶箱尚未解鎖，先打完第一波',ready?'chest-ready':'chest-locked',()=>{if(game.openChest()){update();}else toast('打完第一波，就能開啟寶箱');});b.innerHTML=`<span>${ready?'開箱':'第一波後'}</span>`;}
   for(const d of s.loot)target(d.x,d.y,d.kind==='coin'?`撿取金幣 ${d.amount}`:`撿取藥水，回復 ${d.amount} 生命`,'drop-target '+d.kind,()=>{const near=s.loot.filter(p=>Math.hypot(p.x-d.x,p.y-d.y)<.65);for(const p of near)game.collect(p.id);update();});

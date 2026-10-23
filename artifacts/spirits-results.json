@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": 87,
+  "qualitySamples": 10000,
+  "baseFineOrBetter": 4500,
+  "luckyFineOrBetter": 4800,
+  "balance": [
+    {
+      "spirit": "wind",
+      "rescue": false,
+      "wins": 4,
+      "runs": 16,
+      "used": 0
+    },
+    {
+      "spirit": "wind",
+      "rescue": true,
+      "wins": 16,
+      "runs": 16,
+      "used": 24
+    },
+    {
+      "spirit": "luck",
+      "rescue": false,
+      "wins": 2,
+      "runs": 16,
+      "used": 0
+    },
+    {
+      "spirit": "luck",
+      "rescue": true,
+      "wins": 16,
+      "runs": 16,
+      "used": 27
+    }
+  ]
+}

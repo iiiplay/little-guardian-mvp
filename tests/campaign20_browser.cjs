@@ -1,0 +1,23 @@
+const {chromium}=require('C:/Users/User/.agents/skills/gstack/node_modules/playwright');
+const assert=require('assert/strict'),fs=require('fs');
+(async()=>{const b=await chromium.launch({headless:true}),errors=[];try{
+ const p=await b.newPage({viewport:{width:375,height:667},deviceScaleFactor:2});p.on('pageerror',e=>errors.push(e.message));
+ await p.addInitScript(()=>{if(!localStorage.getItem('little-guardian-mvp-v1'))localStorage.setItem('little-guardian-mvp-v1',JSON.stringify({version:4,unlocked:10,cleared:[1,2,3,4,5,6,7,8,9,10],perks:{power:10},gold:700,inventory:[],equipped:{}}));});
+ await p.goto('http://127.0.0.1:8765/index.html');assert.equal(await p.evaluate(()=>game.save.unlocked),11);await p.locator('#select').click();assert.equal(await p.locator('[data-level]').count(),10);assert(await p.locator('[data-level="11"]').isEnabled());assert(await p.locator('[data-level="12"]').isDisabled());
+ for(const [name,width,height] of [['mobile',375,667],['small',320,568],['desktop',1280,720]]){await p.setViewportSize({width,height});await p.screenshot({path:`artifacts/qa-chapters-${name}.png`});const rect=await p.locator('#dialog').boundingBox();assert(rect.y>=0&&rect.y+rect.height<=height,'chapter map fits '+name);}
+ await p.locator('[data-chapter="0"]').click();assert(await p.locator('[data-level="10"]').isEnabled());await p.locator('[data-chapter="1"]').click();await p.locator('[data-level="11"]').click();await p.locator('.assist-target').first().waitFor();assert((await p.locator('#progress').innerText()).includes('螢光森林'));assert(await p.evaluate(()=>game.run.enemies.some(e=>e.type==='skeleton')&&game.run.enemies.some(e=>e.type==='ranger')));
+ await p.screenshot({path:'artifacts/qa-forest-desktop.png'});await p.setViewportSize({width:375,height:667});await p.screenshot({path:'artifacts/qa-forest-mobile.png'});assert(await p.evaluate(()=>Object.entries(images).filter(([k])=>k.startsWith('skeleton_')||k.startsWith('ranger_')||k.startsWith('forest_')).every(([,im])=>im.complete&&im.naturalWidth>0)),'new assets decoded');
+ await p.evaluate(()=>localStorage.setItem('little-guardian-mvp-v1',JSON.stringify({version:5,unlocked:20,cleared:Array.from({length:19},(_,i)=>i+1),spirit:'wind',perks:{power:19},inventory:[{id:1,slot:'weapon',rarity:1,level:20,trait:'lifesteal'},{id:2,slot:'armor',rarity:0,level:20,trait:'thorns'},{id:3,slot:'charm',rarity:0,level:20,trait:'renewal'}],equipped:{weapon:1,armor:2,charm:3},gold:700})));await p.reload();await p.locator('#start').click();
+ const deadline=Date.now()+180000;let bossSeen=false;while(Date.now()<deadline&&await p.evaluate(()=>game.mode)==='play'){
+   if(await p.evaluate(()=>game.run.enemies.some(e=>e.boss))&&!bossSeen){bossSeen=true;await p.screenshot({path:'artifacts/qa-boss20-mobile.png'});}
+   if(await p.evaluate(()=>game.run.hero.hp/game.run.hero.maxHp<.55)&&await p.locator('#rescue').isEnabled())await p.locator('#rescue').click();
+   if(await p.locator('#ultimate').isEnabled())await p.locator('#ultimate').click();
+   const enemy=p.locator('.assist-target:visible:not(:disabled)').first();if(await enemy.count())await enemy.click({timeout:500}).catch(()=>{});
+   const drop=p.locator('.drop-target:visible').first();if(await drop.count())await drop.click({timeout:500}).catch(()=>{});
+   const barrel=p.locator('.barrel-target:visible').first();if(await barrel.count()&&await p.evaluate(()=>game.run.enemies.some(e=>Math.hypot(e.x-2.5,e.y-7.5)<2)))await barrel.click({timeout:500}).catch(()=>{});
+   await p.waitForTimeout(600);
+ }
+ assert.equal(await p.evaluate(()=>game.mode),'win','natural-time stage 20 clear');assert(bossSeen);assert.equal(await p.evaluate(()=>game.save.unlocked),20);assert(await p.evaluate(()=>game.save.cleared.includes(20)));assert((await p.locator('#dialog').innerText()).includes('20 關試玩完成'));await p.screenshot({path:'artifacts/qa-campaign20-win-mobile.png'});
+ await p.setViewportSize({width:320,height:568});const winBox=await p.locator('#dialog').boundingBox();assert(winBox.y>=0&&winBox.y+winBox.height<=568,'final reward fits small phone');await p.screenshot({path:'artifacts/qa-campaign20-win-small.png'});
+ const result=await p.evaluate(()=>({seconds:game.run.time,charges:game.run.charges,stats:game.run.stats,level:game.run.cfg.id,region:game.run.cfg.region}));assert.deepEqual(errors,[]);fs.writeFileSync('artifacts/campaign20-browser-results.json',JSON.stringify({passed:true,bossSeen,result,errors},null,2));console.log('PASS: migrated stage 11 unlock, chapter tabs at three sizes, forest assets and enemies, natural-time stage 20 boss clear.');
+}finally{await b.close();}})().catch(e=>{console.error(e);process.exit(1);});

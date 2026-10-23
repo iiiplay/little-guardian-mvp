@@ -18,8 +18,9 @@ for(let level=1;level<=10;level++)for(let seed=1;seed<=6;seed++)for(const active
   if(active){for(const d of [...r.loot])E.collect(r,d.id);const target=r.enemies.filter(e=>e.hp>0).sort((a,b)=>(b.warning>0)-(a.warning>0)||a.hp-b.hp)[0];if(target)E.assist(r,target.id);for(const b of r.barrels)if(b.hp>0&&r.enemies.some(e=>e.hp>0&&Math.hypot(e.x-b.x,e.y-b.y)<2))E.detonate(r,b.id);}
   E.step(r,1/30);r.events.length=0;assert(r.assistCharges>=0&&r.assistCharges<=3);assert(r.effects.length<150);assert(Number.isFinite(r.hero.hp));
  }
- assert.equal(r.status,'win',`level ${level} seed ${seed} active ${active}`);runs.push({level,seed,active,seconds:+r.time.toFixed(1),hp:+r.hero.hp.toFixed(1),...r.stats});
+ if(active||level<=2)assert.equal(r.status,'win',`level ${level} seed ${seed} active ${active}`);else assert(['win','lose'].includes(r.status));runs.push({status:r.status,level,seed,active,seconds:+r.time.toFixed(1),hp:+r.hero.hp.toFixed(1),...r.stats});
 }
-const mean=active=>runs.filter(r=>r.active===active).reduce((v,r)=>v+r.seconds,0)/60;
+const mean=active=>{const a=runs.filter(r=>r.active===active&&r.status==='win');return a.reduce((v,r)=>v+r.seconds,0)/a.length;};
+assert(runs.some(r=>!r.active&&r.status==='lose'),'watching with rescue alone can still fail without equipment');
 assert(mean(true)<mean(false)*.85,'active play must make a measurable difference');
 fs.writeFileSync('artifacts/combat-balance.json',JSON.stringify({watchAverage:mean(false),activeAverage:mean(true),runs},null,2));console.log(`PASS: combat safety + 120 campaign runs; watching ${mean(false).toFixed(1)}s / active ${mean(true).toFixed(1)}s mean.`);

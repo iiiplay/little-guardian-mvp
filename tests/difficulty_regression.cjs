@@ -1,0 +1,15 @@
+const {execFileSync}=require('child_process'),assert=require('assert/strict'),fs=require('fs');
+const output='artifacts/difficulty-after.json';
+execFileSync(process.execPath,['tests/difficulty_audit.cjs',output],{stdio:'inherit',env:{...process.env,AUDIT_SEEDS:'8'}});
+const {summary,runs}=JSON.parse(fs.readFileSync(output,'utf8'));
+const row=(mode,band='late')=>summary.find(r=>r.profile==='typical'&&r.mode===mode&&r.band===band);
+assert.equal(row('watch','early').winRate,1,'first two stages remain accessible with ordinary progression');
+assert(row('watch').winRate<=.4,'lifesteal and free healing cannot sustain passive late-game play');
+assert(row('spell').winRate<=.7,'spells alone must not replace healing');
+assert(row('rescue').winRate>=.85,'two rescues make low-input play viable');
+assert(row('spellRescue').winRate>=.8,'spells plus timely healing remain viable');
+assert(row('spellRescue').winRate-row('spell').winRate>=.25,'healing changes the outcome across seeds');
+assert(row('spellRescue').rescues>=.7,'healing is actually used');
+assert.equal(row('activeRescue').winRate,1,'active play retains its advantage');
+assert(runs.every(r=>['win','lose'].includes(r.status)&&r.rescues>=0&&r.rescues<=2),'all audited battles settle safely');
+console.log('PASS: 1440 seeded difficulty comparisons, passive failures, healing benefit, intro accessibility and active-play viability.');

@@ -11,18 +11,20 @@ const time=t=>`${Math.floor(t/60).toString().padStart(2,'0')}:${Math.floor(t%60)
 function toast(text){$('toast').textContent=text;$('toast').hidden=false;toastUntil=performance.now()+2400;}
 const combatAudio=createCombatAudio();let hitStop=0,lastHitSerial=0;
 function tone(type){if(!soundOn)return;try{combatAudio.play(type);}catch{soundOn=false;}}
-function dialog(html,type){returnFocus=document.activeElement;$('veil').hidden=false;$('dialog').innerHTML=html;modalType=type;lastMode=game.mode;$('dialog').querySelectorAll('[data-open-gear]').forEach(b=>b.onclick=showGear);requestAnimationFrame(()=>$('dialog').querySelector('button:not(:disabled)')?.focus({preventScroll:true}));}
+function dialog(html,type){returnFocus=document.activeElement;$('veil').hidden=false;$('dialog').innerHTML=html;modalType=type;lastMode=game.mode;$('dialog').querySelectorAll('[data-open-gear]').forEach(b=>b.onclick=showGear);$('dialog').querySelectorAll('[data-open-spirits]').forEach(b=>b.onclick=showSpirits);requestAnimationFrame(()=>$('dialog').querySelector('button:not(:disabled)')?.focus({preventScroll:true}));}
 function closeDialog(){autoAt=0;$('veil').hidden=true;modalType='';returnFocus?.focus?.({preventScroll:true});}
 function bind(id,fn){$(id)?.addEventListener('click',fn);}
 function showTitle(){
-  dialog(`<p class="eyebrow">一段剛剛好的小冒險</p><img class="hero-portrait" src="${ASSETS.knight_idle_anim_f0}" alt="戴著頭盔的小勇者"><h2 id="dialog-title">小小勇者，<br>需要一點點守護。</h2><p>他會自己探索、戰鬥、找寶物。<br>你負責撿寶充能、打斷怪物、引爆炸藥桶。<br>點「星界裁決」放全屏大招，把怪物打飛！</p><div class="feature-line"><span>自動冒險</span><span>三擊流星</span><span>10 關試玩</span></div><button class="primary" id="start">${game.save.cleared.length?'繼續冒險 · 第 '+game.save.unlocked+' 關':'開始守護'}</button><div class="camp-links"><button class="subtle" id="select">關卡地圖</button><button class="subtle" data-open-gear>裝備背包</button></div><p class="hint">每關約 1～3 分鐘 · 切到背景會自動暫停<br>Art: o_lobster · MVP 0.6</p>`, 'title');
+  dialog(`<p class="eyebrow">一段剛剛好的小冒險</p><img class="hero-portrait" src="${ASSETS.knight_idle_anim_f0}" alt="戴著頭盔的小勇者"><h2 id="dialog-title">小小勇者，<br>需要一點點守護。</h2><p>他會自己探索、戰鬥、找寶物。<br>你負責撿寶充能、打斷怪物、引爆炸藥桶。<br>點「星界裁決」放全屏大招，把怪物打飛！</p><div class="feature-line"><span>自動冒險</span><span>三擊流星</span><span>20 關試玩</span></div><button class="primary" id="start">${game.save.cleared.length?'繼續冒險 · 第 '+game.save.unlocked+' 關':'開始守護'}</button><div class="camp-links"><button class="subtle" id="select">關卡地圖</button><button class="subtle" data-open-gear>裝備背包</button><button class="subtle" data-open-spirits>守護精靈</button></div><p class="hint">每關約 1～3 分鐘 · 切到背景會自動暫停<br>Art: o_lobster · MVP 0.9</p>`, 'title');
   bind('start',()=>start(game.save.unlocked));bind('select',showMap);
 }
 function start(level){if(!game.start(level))return;closeDialog();accumulator=0;hitStop=0;lastHitSerial=0;lastMode='';lastStatus='';tone('rescue');if(game.storageError||!store)toast('瀏覽器無法儲存，目前進度僅保留在本次遊玩');update();}
-function showMap(){
+function showMap(chapter){
+  if(!Number.isInteger(chapter))chapter=Math.floor(((game.run?.cfg.id||game.save.unlocked)-1)/10);chapter=Math.max(0,Math.min(Math.ceil(DungeonEngine.levels.length/10)-1,chapter));
   if(game.mode==='play')game.pause();
-  dialog(`<p class="eyebrow">CHAPTER 01 / 微光地城</p><h2 id="dialog-title">冒險的小足跡</h2><p>完成一關，解鎖下一段旅程。<br>首通獲得祝福與金幣，重玩仍能開箱拿裝備。</p><div class="level-grid">${DungeonEngine.levels.map(l=>`<button data-level="${l.id}" class="${game.save.cleared.includes(l.id)?'done':l.id===game.save.unlocked?'current':''}" ${l.id>game.save.unlocked?'disabled':''} aria-label="第 ${l.id} 關 ${l.title}${l.id>game.save.unlocked?'，尚未解鎖':''}">${l.id>game.save.unlocked?'·':l.id}</button>`).join('')}</div><p class="summary">已完成 ${game.save.cleared.length} / 10 關 · 累計 ${game.save.gold} 金幣</p><p class="hint">${UPGRADE_CHOICES.map(c=>`${c.name} ${game.save.perks[c.id]||0}`).join(' · ')}</p><button class="primary" id="back">${game.run&&game.mode==='pause'?'回到冒險':'返回'}</button>${game.save.cleared.length?'<button class="subtle" id="build">重新分配祝福</button>':''}`, 'map');
+  dialog(`<p class="eyebrow">${chapter===0?'CHAPTER 01 / 微光地城':'CHAPTER 02 / 螢光森林'}</p><h2 id="dialog-title">冒險的小足跡</h2><p>完成一關，解鎖下一段旅程。<br>首通獲得祝福與金幣，重玩仍能開箱拿裝備。</p><div class="chapter-tabs"><button data-chapter="0" aria-pressed="${chapter===0}">01 微光地城</button><button data-chapter="1" aria-pressed="${chapter===1}">02 螢光森林</button></div><div class="level-grid">${DungeonEngine.levels.slice(chapter*10,(chapter+1)*10).map(l=>`<button data-level="${l.id}" class="${game.save.cleared.includes(l.id)?'done':l.id===game.save.unlocked?'current':''}" ${l.id>game.save.unlocked?'disabled':''} aria-label="第 ${l.id} 關 ${l.title}${l.id>game.save.unlocked?'，尚未解鎖':''}">${l.id>game.save.unlocked?'·':l.id}</button>`).join('')}</div><p class="summary">已完成 ${game.save.cleared.length} / ${DungeonEngine.levels.length} 關 · 累計 ${game.save.gold} 金幣</p><p class="hint">${UPGRADE_CHOICES.map(c=>`${c.name} ${game.save.perks[c.id]||0}`).join(' · ')}</p><button class="primary" id="back">${game.run&&game.mode==='pause'?'回到冒險':'返回'}</button>${game.save.cleared.length?'<button class="subtle" id="build">重新分配祝福</button>':''}`, 'map');
   $('dialog').querySelectorAll('[data-level]').forEach(b=>b.onclick=()=>start(Number(b.dataset.level)));
+  $('dialog').querySelectorAll('[data-chapter]').forEach(b=>b.onclick=()=>showMap(Number(b.dataset.chapter)));
   bind('back',()=>{if(game.mode==='pause'){game.pause();closeDialog();}else{game.title();showTitle();}});
   bind('build',showBuild);
 }
@@ -34,12 +36,12 @@ function showPause(){
   dialog(`<p class="eyebrow">TAKE A LITTLE BREAK</p><img class="hero-portrait" src="${ASSETS.knight_idle_anim_f0}" alt="休息中的勇者"><h2 id="dialog-title">休息一下。</h2><p>小勇者會在這裡等你。<br>目前的冒險已暫停。</p><button class="primary" id="resume">繼續守護</button><button class="subtle" id="restart">重新挑戰本關</button><button class="subtle" id="select">關卡地圖</button>`, 'pause');
   bind('resume',()=>{game.pause();closeDialog();});bind('restart',()=>start(game.run.cfg.id));bind('select',showMap);
 }
-function continueAfterWin(){const n=game.run.cfg.id;if(n===10){game.title();showTitle();}else start(n+1);}
+function continueAfterWin(){const n=game.run.cfg.id;if(n>=DungeonEngine.levels.length){game.title();showTitle();}else start(n+1);}
 function showWin(){
   const s=game.run;
   const choices=s.cfg.id%2===1?[UPGRADE_CHOICES[0],UPGRADE_CHOICES[1],UPGRADE_CHOICES[2]]:[UPGRADE_CHOICES[0],UPGRADE_CHOICES[1],UPGRADE_CHOICES[3]];
-  const isLast=s.cfg.id===10;
-  dialog(`<p class="eyebrow">${isLast?'CHAPTER COMPLETE':'A LITTLE VICTORY'}</p><h2 id="dialog-title">${isLast?'微光，因你而亮。':'又前進了一小步！'}</h2><p>${isLast?'10 關試玩完成，謝謝你一路守護。':s.cfg.title+'，探索完成。'}</p><div class="result-stats"><div><b>${time(s.time)}</b><small>探險時間</small></div><div><b>+${game.pendingUpgrade?s.gold:0}</b><small>${game.pendingUpgrade?'首通金幣':'重玩不重複領獎'}</small></div><div><b>${s.kills}</b><small>擊退怪物</small></div></div><p class="intervention-result">你的戰績：${s.stats.assists} 次星擊 · ${s.stats.interrupts} 次打斷<br>${s.stats.bursts} 次流星 · ${s.manualLoot} 件親手撿寶</p>${game.pendingUpgrade?`<p>送給勇者一份永久祝福</p><div class="choices">${choices.map((c,i)=>`<button class="choice" data-upgrade="${c.id}"><span class="icon" style="color:${c.color}">${icon(c.symbol)}</span><span><strong>${c.name}</strong><small>${c.description}${i===0?' · 預設選擇':''}</small></span></button>`).join('')}</div><p class="hint" id="auto">12 秒後自動選擇「磨亮小劍」</p>`:`<button class="primary" id="next">${isLast?'返回營地':'前往第 '+(s.cfg.id+1)+' 關'}</button><p class="hint" id="auto">12 秒後自動繼續</p>`}<div class="camp-links"><button class="subtle" id="select">關卡地圖</button><button class="subtle" data-open-gear>查看裝備</button></div>`, 'win');
+  const isLast=s.cfg.id===DungeonEngine.levels.length;
+  dialog(`<p class="eyebrow">${isLast?'CHAPTER COMPLETE':'A LITTLE VICTORY'}</p><h2 id="dialog-title">${isLast?'微光，因你而亮。':'又前進了一小步！'}</h2><p>${isLast?'20 關試玩完成，謝謝你一路守護。':s.cfg.title+'，探索完成。'}</p><div class="result-stats"><div><b>${time(s.time)}</b><small>探險時間</small></div><div><b>+${game.pendingUpgrade?s.gold:0}</b><small>${game.pendingUpgrade?'首通金幣':'重玩不重複領獎'}</small></div><div><b>${s.kills}</b><small>擊退怪物</small></div></div><p class="intervention-result">你的戰績：${s.stats.assists} 次星擊 · ${s.stats.interrupts} 次打斷<br>${s.stats.ultimates} 次大招 · ${s.stats.bursts} 次流星 · ${s.manualLoot} 件親手撿寶</p>${s.unlockedSpirit?`<div class="spirit-unlock">${Equipment.spirits[s.unlockedSpirit].name} 加入旅程！<br><button data-open-spirits>認識守護精靈</button></div>`:''}${game.pendingUpgrade?`<p>送給勇者一份永久祝福</p><div class="choices">${choices.map((c,i)=>`<button class="choice" data-upgrade="${c.id}"><span class="icon" style="color:${c.color}">${icon(c.symbol)}</span><span><strong>${c.name}</strong><small>${c.description}${i===0?' · 預設選擇':''}</small></span></button>`).join('')}</div><p class="hint" id="auto">12 秒後自動選擇「磨亮小劍」</p>`:`<button class="primary" id="next">${isLast?'返回營地':'前往第 '+(s.cfg.id+1)+' 關'}</button><p class="hint" id="auto">12 秒後自動繼續</p>`}<div class="camp-links"><button class="subtle" id="select">關卡地圖</button><button class="subtle" data-open-gear>查看裝備</button></div>`, 'win');
   autoAt=performance.now()+12000;
   $('dialog').querySelectorAll('[data-upgrade]').forEach(b=>b.onclick=()=>{game.choose(b.dataset.upgrade);autoAt=0;continueAfterWin();});
   bind('next',continueAfterWin);bind('select',()=>{if(game.pendingUpgrade)game.choose('power');autoAt=0;showMap();});
@@ -51,7 +53,7 @@ function showLose(){
 function update(){
   const s=game.run||preview,h=s.hero;
   $('pause').disabled=!['play','pause'].includes(game.mode);$('pause').innerHTML=icon(game.mode==='pause'?'play':'pause');$('pause').setAttribute('aria-label',game.mode==='pause'?'繼續冒險':'暫停');
-  $('chapter').textContent=String(s.cfg.id).padStart(2,'0')+' / '+s.cfg.title;$('progress').textContent='微光地城 · '+s.cfg.id+' / 10';$('timer').textContent=time(s.time);$('hp').textContent=Math.ceil(h.hp)+' / '+h.maxHp;$('health').style.width=(h.hp/h.maxHp*100)+'%';$('health').style.background=h.hp/h.maxHp<.3?'#ef788f':'#f4a4b2';
+  $('chapter').textContent=String(s.cfg.id).padStart(2,'0')+' / '+s.cfg.title;$('progress').textContent=s.cfg.region+' · '+s.cfg.id+' / '+DungeonEngine.levels.length;$('timer').textContent=time(s.time);$('hp').textContent=Math.ceil(h.hp)+' / '+h.maxHp;$('health').style.width=(h.hp/h.maxHp*100)+'%';$('health').style.background=h.hp/h.maxHp<.3?'#ef788f':'#f4a4b2';
   const bar=document.querySelector('[role="progressbar"]');bar.setAttribute('aria-valuenow',Math.ceil(h.hp));bar.setAttribute('aria-valuemax',h.maxHp);
   $('gold').textContent='金幣 '+s.gold;$('bag').dataset.count=Math.min(99,game.save.inventory.length);updateLootTargets();document.querySelectorAll('.wave-dots i').forEach((el,i)=>el.classList.toggle('on',i<s.wave));
   $('live').innerHTML='<i></i>'+(game.mode==='pause'?'暫停中':game.mode==='play'?(s.wave>=3&&!s.enemies.length?'前往出口':'第 '+Math.max(1,s.wave)+' / 3 波'):'自動探險');
@@ -63,7 +65,7 @@ function update(){
   $('rescue-title').textContent=s.charges<=0?'守護用完':s.cooldown>0?'冷卻 '+Math.ceil(s.cooldown)+'s':'守護降臨';$('rescue-info').textContent=s.charges<=0?'下一關補滿守護':`回血＋護盾 · ${s.charges} 次`;
   const status=game.mode==='play'?(h.shield>0?'守護生效中，放心往前走吧':h.hp/h.maxHp<.4?'勇者需要你！點一下「守護降臨」':s.loot.length?'撿寶 +1 星能 · 集滿 5 件進入狂熱':!s.chest&&s.kills>=s.cfg.count?'寶箱解鎖了！點右上寶箱拿裝備':s.wave>=3&&!s.enemies.length?'打掃完畢！拿上寶物，往出口出發':!s.enemies.length?'喘口氣，準備下一波冒險':s.assistCharges>0&&s.assistCooldown<=0?'點怪星擊 · 紅圈時打斷有傷害加成':'勇者正在自動戰鬥 · 紅圈是出招預警'):game.mode==='pause'?'冒險暫停中':'小勇者已經準備好了';
   if(status!==lastStatus){$('status').textContent=status;lastStatus=status;}
-  if(game.mode!==lastMode){lastMode=game.mode;if(!['map','gear'].includes(modalType)){if(game.mode==='win')showWin();else if(game.mode==='lose')showLose();else if(game.mode==='pause')showPause();}}
+  if(game.mode!==lastMode){lastMode=game.mode;if(!['map','gear','spirits'].includes(modalType)){if(game.mode==='win')showWin();else if(game.mode==='lose')showLose();else if(game.mode==='pause')showPause();}}
 }
 bind('ultimate',()=>{game.ultimate();update();});
 bind('rescue',()=>{if(game.rescue())toast('守護降臨！回復生命，無敵 6 秒');update();});
@@ -73,7 +75,7 @@ bind('pause',()=>{if(game.mode==='play'||game.mode==='pause'){game.pause();if(ga
 bind('map',()=>{if(game.mode==='win'&&game.pendingUpgrade)game.choose('power');autoAt=0;showMap();});
 document.addEventListener('visibilitychange',()=>{if(document.hidden){if(game.mode==='play'){game.pause();update();}autoAt=0;}else if(game.mode==='win'&&modalType==='win')autoAt=performance.now()+12000;lastStamp=0;accumulator=0;});
 document.addEventListener('keydown',e=>{
-  if(e.key==='Escape'){if(modalType==='forge'){renderGear();return;}if(modalType==='treasure'){closeTreasure(false);return;}if(modalType==='gear'){closeGear();return;}if(modalType==='map')$('back')?.click();else if(game.mode==='play'||game.mode==='pause')$('pause').click();}
+  if(e.key==='Escape'){if(modalType==='spirits'){closeSpirits();return;}if(modalType==='forge'){renderGear();return;}if(modalType==='treasure'){closeTreasure(false);return;}if(modalType==='gear'){closeGear();return;}if(modalType==='map')$('back')?.click();else if(game.mode==='play'||game.mode==='pause')$('pause').click();}
   if(e.key==='Tab'&&!$('veil').hidden){const btns=[...$('dialog').querySelectorAll('button:not(:disabled)')],first=btns[0],last=btns.at(-1);if(e.shiftKey&&document.activeElement===first){last.focus();e.preventDefault();}else if(!e.shiftKey&&document.activeElement===last){first.focus();e.preventDefault();}}
 });
 function frame(stamp){

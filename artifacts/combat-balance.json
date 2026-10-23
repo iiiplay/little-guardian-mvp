@@ -1,13 +1,14 @@
 {
-  "watchAverage": 88.87666666666665,
-  "activeAverage": 42.30166666666666,
+  "watchAverage": 85.17083333333335,
+  "activeAverage": 42.298333333333325,
   "runs": [
     {
+      "status": "win",
       "level": 1,
       "seed": 1,
       "active": false,
       "seconds": 84.5,
-      "hp": 112,
+      "hp": 90,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -15,6 +16,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 1,
       "seed": 1,
       "active": true,
@@ -27,11 +29,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 1,
       "seed": 2,
       "active": false,
       "seconds": 82.8,
-      "hp": 97,
+      "hp": 117,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -39,6 +42,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 1,
       "seed": 2,
       "active": true,
@@ -51,11 +55,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 1,
       "seed": 3,
       "active": false,
       "seconds": 84.7,
-      "hp": 109,
+      "hp": 87,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -63,6 +68,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 1,
       "seed": 3,
       "active": true,
@@ -75,10 +81,193 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 1,
       "seed": 4,
       "active": false,
       "seconds": 85,
+      "hp": 83,
+      "assists": 0,
+      "interrupts": 0,
+      "bursts": 0,
+      "barrels": 0,
+      "ultimates": 0
+    },
+    {
+      "status": "win",
+      "level": 1,
+      "seed": 4,
+      "active": true,
+      "seconds": 37.1,
+      "hp": 120,
+      "assists": 15,
+      "interrupts": 2,
+      "bursts": 3,
+      "barrels": 2,
+      "ultimates": 0
+    },
+    {
+      "status": "win",
+      "level": 1,
+      "seed": 5,
+      "active": false,
+      "seconds": 84.5,
+      "hp": 86,
+      "assists": 0,
+      "interrupts": 0,
+      "bursts": 0,
+      "barrels": 0,
+      "ultimates": 0
+    },
+    {
+      "status": "win",
+      "level": 1,
+      "seed": 5,
+      "active": true,
+      "seconds": 37.1,
+      "hp": 120,
+      "assists": 15,
+      "interrupts": 2,
+      "bursts": 3,
+      "barrels": 2,
+      "ultimates": 0
+    },
+    {
+      "status": "win",
+      "level": 1,
+      "seed": 6,
+      "active": false,
+      "seconds": 85.1,
+      "hp": 82,
+      "assists": 0,
+      "interrupts": 0,
+      "bursts": 0,
+      "barrels": 0,
+      "ultimates": 0
+    },
+    {
+      "status": "win",
+      "level": 1,
+      "seed": 6,
+      "active": true,
+      "seconds": 37.1,
+      "hp": 120,
+      "assists": 15,
+      "interrupts": 2,
+      "bursts": 3,
+      "barrels": 2,
+      "ultimates": 0
+    },
+    {
+      "status": "win",
+      "level": 2,
+      "seed": 1,
+      "active": false,
+      "seconds": 90.7,
+      "hp": 72,
+      "assists": 0,
+      "interrupts": 0,
+      "bursts": 0,
+      "barrels": 0,
+      "ultimates": 0
+    },
+    {
+      "status": "win",
+      "level": 2,
+      "seed": 1,
+      "active": true,
+      "seconds": 41.5,
+      "hp": 113.5,
+      "assists": 20,
+      "interrupts": 3,
+      "bursts": 5,
+      "barrels": 2,
+      "ultimates": 0
+    },
+    {
+      "status": "win",
+      "level": 2,
+      "seed": 2,
+      "active": false,
+      "seconds": 93.9,
+      "hp": 105,
+      "assists": 0,
+      "interrupts": 0,
+      "bursts": 0,
+      "barrels": 0,
+      "ultimates": 0
+    },
+    {
+      "status": "win",
+      "level": 2,
+      "seed": 2,
+      "active": true,
+      "seconds": 41.5,
+      "hp": 113.5,
+      "assists": 20,
+      "interrupts": 3,
+      "bursts": 5,
+      "barrels": 2,
+      "ultimates": 0
+    },
+    {
+      "status": "win",
+      "level": 2,
+      "seed": 3,
+      "active": false,
+      "seconds": 94.1,
+      "hp": 105,
+      "assists": 0,
+      "interrupts": 0,
+      "bursts": 0,
+      "barrels": 0,
+      "ultimates": 0
+    },
+    {
+      "status": "win",
+      "level": 2,
+      "seed": 3,
+      "active": true,
+      "seconds": 41.5,
+      "hp": 113.5,
+      "assists": 20,
+      "interrupts": 3,
+      "bursts": 5,
+      "barrels": 2,
+      "ultimates": 0
+    },
+    {
+      "status": "win",
+      "level": 2,
+      "seed": 4,
+      "active": false,
+      "seconds": 91.5,
+      "hp": 109.8,
+      "assists": 0,
+      "interrupts": 0,
+      "bursts": 0,
+      "barrels": 0,
+      "ultimates": 0
+    },
+    {
+      "status": "win",
+      "level": 2,
+      "seed": 4,
+      "active": true,
+      "seconds": 41.5,
+      "hp": 113.5,
+      "assists": 20,
+      "interrupts": 3,
+      "bursts": 5,
+      "barrels": 2,
+      "ultimates": 0
+    },
+    {
+      "status": "win",
+      "level": 2,
+      "seed": 5,
+      "active": false,
+      "seconds": 91.1,
       "hp": 111,
       "assists": 0,
       "interrupts": 0,
@@ -87,179 +276,12 @@
       "ultimates": 0
     },
     {
-      "level": 1,
-      "seed": 4,
-      "active": true,
-      "seconds": 37.1,
-      "hp": 120,
-      "assists": 15,
-      "interrupts": 2,
-      "bursts": 3,
-      "barrels": 2,
-      "ultimates": 0
-    },
-    {
-      "level": 1,
-      "seed": 5,
-      "active": false,
-      "seconds": 84.5,
-      "hp": 114,
-      "assists": 0,
-      "interrupts": 0,
-      "bursts": 0,
-      "barrels": 0,
-      "ultimates": 0
-    },
-    {
-      "level": 1,
-      "seed": 5,
-      "active": true,
-      "seconds": 37.1,
-      "hp": 120,
-      "assists": 15,
-      "interrupts": 2,
-      "bursts": 3,
-      "barrels": 2,
-      "ultimates": 0
-    },
-    {
-      "level": 1,
-      "seed": 6,
-      "active": false,
-      "seconds": 85.1,
-      "hp": 106,
-      "assists": 0,
-      "interrupts": 0,
-      "bursts": 0,
-      "barrels": 0,
-      "ultimates": 0
-    },
-    {
-      "level": 1,
-      "seed": 6,
-      "active": true,
-      "seconds": 37.1,
-      "hp": 120,
-      "assists": 15,
-      "interrupts": 2,
-      "bursts": 3,
-      "barrels": 2,
-      "ultimates": 0
-    },
-    {
-      "level": 2,
-      "seed": 1,
-      "active": false,
-      "seconds": 90.8,
-      "hp": 93.2,
-      "assists": 0,
-      "interrupts": 0,
-      "bursts": 0,
-      "barrels": 0,
-      "ultimates": 0
-    },
-    {
-      "level": 2,
-      "seed": 1,
-      "active": true,
-      "seconds": 41.5,
-      "hp": 120,
-      "assists": 20,
-      "interrupts": 3,
-      "bursts": 5,
-      "barrels": 2,
-      "ultimates": 0
-    },
-    {
-      "level": 2,
-      "seed": 2,
-      "active": false,
-      "seconds": 94.1,
-      "hp": 118.7,
-      "assists": 0,
-      "interrupts": 0,
-      "bursts": 0,
-      "barrels": 0,
-      "ultimates": 0
-    },
-    {
-      "level": 2,
-      "seed": 2,
-      "active": true,
-      "seconds": 41.5,
-      "hp": 120,
-      "assists": 20,
-      "interrupts": 3,
-      "bursts": 5,
-      "barrels": 2,
-      "ultimates": 0
-    },
-    {
-      "level": 2,
-      "seed": 3,
-      "active": false,
-      "seconds": 94.6,
-      "hp": 89,
-      "assists": 0,
-      "interrupts": 0,
-      "bursts": 0,
-      "barrels": 0,
-      "ultimates": 0
-    },
-    {
-      "level": 2,
-      "seed": 3,
-      "active": true,
-      "seconds": 41.5,
-      "hp": 120,
-      "assists": 20,
-      "interrupts": 3,
-      "bursts": 5,
-      "barrels": 2,
-      "ultimates": 0
-    },
-    {
-      "level": 2,
-      "seed": 4,
-      "active": false,
-      "seconds": 91.6,
-      "hp": 89.6,
-      "assists": 0,
-      "interrupts": 0,
-      "bursts": 0,
-      "barrels": 0,
-      "ultimates": 0
-    },
-    {
-      "level": 2,
-      "seed": 4,
-      "active": true,
-      "seconds": 41.5,
-      "hp": 120,
-      "assists": 20,
-      "interrupts": 3,
-      "bursts": 5,
-      "barrels": 2,
-      "ultimates": 0
-    },
-    {
-      "level": 2,
-      "seed": 5,
-      "active": false,
-      "seconds": 91,
-      "hp": 96,
-      "assists": 0,
-      "interrupts": 0,
-      "bursts": 0,
-      "barrels": 0,
-      "ultimates": 0
-    },
-    {
+      "status": "win",
       "level": 2,
       "seed": 5,
       "active": true,
       "seconds": 41.5,
-      "hp": 120,
+      "hp": 113.5,
       "assists": 20,
       "interrupts": 3,
       "bursts": 5,
@@ -267,11 +289,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 2,
       "seed": 6,
       "active": false,
-      "seconds": 92,
-      "hp": 89,
+      "seconds": 91.9,
+      "hp": 106.5,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -279,11 +302,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 2,
       "seed": 6,
       "active": true,
       "seconds": 41.5,
-      "hp": 120,
+      "hp": 113.5,
       "assists": 20,
       "interrupts": 3,
       "bursts": 5,
@@ -291,11 +315,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 3,
       "seed": 1,
       "active": false,
-      "seconds": 80.5,
-      "hp": 88.9,
+      "seconds": 80.7,
+      "hp": 103.2,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -303,6 +328,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 3,
       "seed": 1,
       "active": true,
@@ -315,11 +341,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 3,
       "seed": 2,
       "active": false,
-      "seconds": 79.3,
-      "hp": 88.9,
+      "seconds": 79.8,
+      "hp": 98,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -327,6 +354,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 3,
       "seed": 2,
       "active": true,
@@ -339,11 +367,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 3,
       "seed": 3,
       "active": false,
-      "seconds": 80.2,
-      "hp": 88.9,
+      "seconds": 81.4,
+      "hp": 97.2,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -351,6 +380,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 3,
       "seed": 3,
       "active": true,
@@ -363,11 +393,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 3,
       "seed": 4,
       "active": false,
-      "seconds": 80.5,
-      "hp": 86.7,
+      "seconds": 80.3,
+      "hp": 92,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -375,6 +406,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 3,
       "seed": 4,
       "active": true,
@@ -387,11 +419,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 3,
       "seed": 5,
       "active": false,
-      "seconds": 80.2,
-      "hp": 88.9,
+      "seconds": 79.7,
+      "hp": 102,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -399,6 +432,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 3,
       "seed": 5,
       "active": true,
@@ -411,11 +445,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 3,
       "seed": 6,
       "active": false,
-      "seconds": 80.9,
-      "hp": 88.4,
+      "seconds": 80.3,
+      "hp": 97.2,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -423,6 +458,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 3,
       "seed": 6,
       "active": true,
@@ -435,11 +471,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 4,
       "seed": 1,
       "active": false,
-      "seconds": 85.6,
-      "hp": 98.5,
+      "seconds": 86.2,
+      "hp": 90.8,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -447,11 +484,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 4,
       "seed": 1,
       "active": true,
       "seconds": 46.9,
-      "hp": 120,
+      "hp": 116.2,
       "assists": 20,
       "interrupts": 1,
       "bursts": 5,
@@ -459,11 +497,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 4,
       "seed": 2,
       "active": false,
-      "seconds": 85.5,
-      "hp": 101.5,
+      "seconds": 85.2,
+      "hp": 99.1,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -471,11 +510,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 4,
       "seed": 2,
       "active": true,
       "seconds": 47.5,
-      "hp": 120,
+      "hp": 116.2,
       "assists": 20,
       "interrupts": 1,
       "bursts": 5,
@@ -483,11 +523,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 4,
       "seed": 3,
       "active": false,
-      "seconds": 85.3,
-      "hp": 106.2,
+      "seconds": 85.2,
+      "hp": 85,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -495,11 +536,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 4,
       "seed": 3,
       "active": true,
       "seconds": 45.2,
-      "hp": 120,
+      "hp": 116.2,
       "assists": 20,
       "interrupts": 2,
       "bursts": 5,
@@ -507,11 +549,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 4,
       "seed": 4,
       "active": false,
-      "seconds": 83.9,
-      "hp": 96.1,
+      "seconds": 84.5,
+      "hp": 77.2,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -519,11 +562,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 4,
       "seed": 4,
       "active": true,
       "seconds": 46.8,
-      "hp": 120,
+      "hp": 116.2,
       "assists": 20,
       "interrupts": 2,
       "bursts": 5,
@@ -531,11 +575,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 4,
       "seed": 5,
       "active": false,
-      "seconds": 80.9,
-      "hp": 85.9,
+      "seconds": 80.8,
+      "hp": 79.3,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -543,11 +588,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 4,
       "seed": 5,
       "active": true,
       "seconds": 47.5,
-      "hp": 120,
+      "hp": 116.2,
       "assists": 20,
       "interrupts": 1,
       "bursts": 5,
@@ -555,11 +601,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 4,
       "seed": 6,
       "active": false,
-      "seconds": 80.3,
-      "hp": 87.1,
+      "seconds": 80.2,
+      "hp": 79.3,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -567,11 +614,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 4,
       "seed": 6,
       "active": true,
       "seconds": 46.8,
-      "hp": 120,
+      "hp": 116.2,
       "assists": 20,
       "interrupts": 2,
       "bursts": 5,
@@ -579,11 +627,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 5,
       "seed": 1,
       "active": false,
-      "seconds": 79.3,
-      "hp": 120,
+      "seconds": 62.2,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -591,11 +640,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 5,
       "seed": 1,
       "active": true,
       "seconds": 41.3,
-      "hp": 120,
+      "hp": 114.4,
       "assists": 19,
       "interrupts": 1,
       "bursts": 6,
@@ -603,11 +653,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 5,
       "seed": 2,
       "active": false,
-      "seconds": 80.3,
-      "hp": 119.8,
+      "seconds": 63.2,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -615,11 +666,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 5,
       "seed": 2,
       "active": true,
       "seconds": 41.6,
-      "hp": 120,
+      "hp": 114.4,
       "assists": 19,
       "interrupts": 1,
       "bursts": 6,
@@ -627,11 +679,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 5,
       "seed": 3,
       "active": false,
-      "seconds": 79.5,
-      "hp": 116.6,
+      "seconds": 60,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -639,11 +692,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 5,
       "seed": 3,
       "active": true,
       "seconds": 41.1,
-      "hp": 120,
+      "hp": 107.7,
       "assists": 19,
       "interrupts": 0,
       "bursts": 6,
@@ -651,11 +705,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 5,
       "seed": 4,
       "active": false,
-      "seconds": 79.4,
-      "hp": 119.5,
+      "seconds": 60.2,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -663,11 +718,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 5,
       "seed": 4,
       "active": true,
       "seconds": 41.6,
-      "hp": 120,
+      "hp": 114.4,
       "assists": 19,
       "interrupts": 2,
       "bursts": 6,
@@ -675,11 +731,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 5,
       "seed": 5,
       "active": false,
-      "seconds": 80.5,
-      "hp": 120,
+      "seconds": 65.5,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -687,11 +744,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 5,
       "seed": 5,
       "active": true,
       "seconds": 41.3,
-      "hp": 120,
+      "hp": 114.4,
       "assists": 19,
       "interrupts": 1,
       "bursts": 6,
@@ -699,11 +757,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 5,
       "seed": 6,
       "active": false,
-      "seconds": 80.2,
-      "hp": 120,
+      "seconds": 62.4,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -711,11 +770,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 5,
       "seed": 6,
       "active": true,
       "seconds": 41.5,
-      "hp": 120,
+      "hp": 114.4,
       "assists": 19,
       "interrupts": 2,
       "bursts": 6,
@@ -723,11 +783,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 6,
       "seed": 1,
       "active": false,
-      "seconds": 81.3,
-      "hp": 120,
+      "seconds": 61.7,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -735,6 +796,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 6,
       "seed": 1,
       "active": true,
@@ -747,11 +809,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 6,
       "seed": 2,
       "active": false,
-      "seconds": 81.7,
-      "hp": 89.1,
+      "seconds": 62.9,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -759,6 +822,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 6,
       "seed": 2,
       "active": true,
@@ -771,11 +835,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 6,
       "seed": 3,
       "active": false,
-      "seconds": 80.7,
-      "hp": 115.6,
+      "seconds": 59.5,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -783,6 +848,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 6,
       "seed": 3,
       "active": true,
@@ -795,11 +861,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 6,
       "seed": 4,
       "active": false,
-      "seconds": 81.6,
-      "hp": 120,
+      "seconds": 57.9,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -807,6 +874,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 6,
       "seed": 4,
       "active": true,
@@ -819,11 +887,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 6,
       "seed": 5,
       "active": false,
-      "seconds": 81.9,
-      "hp": 119,
+      "seconds": 60.7,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -831,6 +900,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 6,
       "seed": 5,
       "active": true,
@@ -843,11 +913,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 6,
       "seed": 6,
       "active": false,
-      "seconds": 81.7,
-      "hp": 120,
+      "seconds": 60.5,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -855,6 +926,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 6,
       "seed": 6,
       "active": true,
@@ -867,11 +939,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 7,
       "seed": 1,
       "active": false,
-      "seconds": 94.4,
-      "hp": 111,
+      "seconds": 58.8,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -879,11 +952,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 7,
       "seed": 1,
       "active": true,
       "seconds": 45.6,
-      "hp": 120,
+      "hp": 110.8,
       "assists": 24,
       "interrupts": 4,
       "bursts": 7,
@@ -891,11 +965,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 7,
       "seed": 2,
       "active": false,
-      "seconds": 91.7,
-      "hp": 118,
+      "seconds": 60.8,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -903,11 +978,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 7,
       "seed": 2,
       "active": true,
       "seconds": 44.9,
-      "hp": 120,
+      "hp": 115.9,
       "assists": 23,
       "interrupts": 4,
       "bursts": 6,
@@ -915,11 +991,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 7,
       "seed": 3,
       "active": false,
-      "seconds": 96.9,
-      "hp": 120,
+      "seconds": 59.3,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -927,11 +1004,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 7,
       "seed": 3,
       "active": true,
       "seconds": 44.9,
-      "hp": 120,
+      "hp": 115.9,
       "assists": 23,
       "interrupts": 3,
       "bursts": 6,
@@ -939,11 +1017,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 7,
       "seed": 4,
       "active": false,
-      "seconds": 92.7,
-      "hp": 120,
+      "seconds": 60.3,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -951,6 +1030,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 7,
       "seed": 4,
       "active": true,
@@ -963,11 +1043,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 7,
       "seed": 5,
       "active": false,
-      "seconds": 93.6,
-      "hp": 101.9,
+      "seconds": 60.3,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -975,11 +1056,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 7,
       "seed": 5,
       "active": true,
       "seconds": 44.9,
-      "hp": 120,
+      "hp": 115.9,
       "assists": 23,
       "interrupts": 2,
       "bursts": 6,
@@ -987,11 +1069,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 7,
       "seed": 6,
       "active": false,
-      "seconds": 94.1,
-      "hp": 120,
+      "seconds": 58.7,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -999,11 +1082,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 7,
       "seed": 6,
       "active": true,
       "seconds": 41.6,
-      "hp": 120,
+      "hp": 118,
       "assists": 23,
       "interrupts": 5,
       "bursts": 7,
@@ -1011,11 +1095,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 8,
       "seed": 1,
       "active": false,
-      "seconds": 96.2,
-      "hp": 114.3,
+      "seconds": 45.9,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1023,6 +1108,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 8,
       "seed": 1,
       "active": true,
@@ -1035,11 +1121,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 8,
       "seed": 2,
       "active": false,
-      "seconds": 92.8,
-      "hp": 97.5,
+      "seconds": 41.9,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1047,11 +1134,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 8,
       "seed": 2,
       "active": true,
       "seconds": 44.9,
-      "hp": 120,
+      "hp": 109,
       "assists": 24,
       "interrupts": 2,
       "bursts": 7,
@@ -1059,11 +1147,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 8,
       "seed": 3,
       "active": false,
-      "seconds": 92.9,
-      "hp": 105.3,
+      "seconds": 45,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1071,11 +1160,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 8,
       "seed": 3,
       "active": true,
       "seconds": 40.7,
-      "hp": 120,
+      "hp": 119,
       "assists": 23,
       "interrupts": 3,
       "bursts": 7,
@@ -1083,11 +1173,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 8,
       "seed": 4,
       "active": false,
-      "seconds": 94.8,
-      "hp": 97.3,
+      "seconds": 45.6,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1095,6 +1186,7 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 8,
       "seed": 4,
       "active": true,
@@ -1107,11 +1199,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 8,
       "seed": 5,
       "active": false,
-      "seconds": 91.8,
-      "hp": 96.7,
+      "seconds": 42.2,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1119,11 +1212,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 8,
       "seed": 5,
       "active": true,
       "seconds": 44.7,
-      "hp": 120,
+      "hp": 109,
       "assists": 24,
       "interrupts": 2,
       "bursts": 7,
@@ -1131,11 +1225,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 8,
       "seed": 6,
       "active": false,
-      "seconds": 92.4,
-      "hp": 95.5,
+      "seconds": 49.3,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1143,11 +1238,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 8,
       "seed": 6,
       "active": true,
       "seconds": 40.5,
-      "hp": 120,
+      "hp": 118,
       "assists": 23,
       "interrupts": 4,
       "bursts": 7,
@@ -1155,11 +1251,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 9,
       "seed": 1,
       "active": false,
-      "seconds": 96.4,
-      "hp": 100.4,
+      "seconds": 57.1,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1167,11 +1264,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 9,
       "seed": 1,
       "active": true,
       "seconds": 43.3,
-      "hp": 120,
+      "hp": 102.9,
       "assists": 24,
       "interrupts": 1,
       "bursts": 7,
@@ -1179,11 +1277,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 9,
       "seed": 2,
       "active": false,
-      "seconds": 96,
-      "hp": 98.9,
+      "seconds": 49.6,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1191,11 +1290,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 9,
       "seed": 2,
       "active": true,
       "seconds": 43.1,
-      "hp": 120,
+      "hp": 102.9,
       "assists": 24,
       "interrupts": 1,
       "bursts": 7,
@@ -1203,11 +1303,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 9,
       "seed": 3,
       "active": false,
-      "seconds": 97.7,
-      "hp": 99.8,
+      "seconds": 57.8,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1215,11 +1316,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 9,
       "seed": 3,
       "active": true,
       "seconds": 43.1,
-      "hp": 120,
+      "hp": 102.9,
       "assists": 24,
       "interrupts": 1,
       "bursts": 7,
@@ -1227,11 +1329,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 9,
       "seed": 4,
       "active": false,
-      "seconds": 95.9,
-      "hp": 102.7,
+      "seconds": 49.6,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1239,11 +1342,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 9,
       "seed": 4,
       "active": true,
       "seconds": 43.3,
-      "hp": 120,
+      "hp": 102.9,
       "assists": 24,
       "interrupts": 1,
       "bursts": 7,
@@ -1251,11 +1355,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 9,
       "seed": 5,
       "active": false,
-      "seconds": 96.6,
-      "hp": 95.9,
+      "seconds": 49.6,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1263,11 +1368,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 9,
       "seed": 5,
       "active": true,
       "seconds": 43.1,
-      "hp": 120,
+      "hp": 102.9,
       "assists": 24,
       "interrupts": 2,
       "bursts": 7,
@@ -1275,11 +1381,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 9,
       "seed": 6,
       "active": false,
-      "seconds": 95.8,
-      "hp": 98.9,
+      "seconds": 50.3,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1287,11 +1394,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 9,
       "seed": 6,
       "active": true,
       "seconds": 43.2,
-      "hp": 120,
+      "hp": 102.9,
       "assists": 24,
       "interrupts": 2,
       "bursts": 7,
@@ -1299,11 +1407,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 10,
       "seed": 1,
       "active": false,
-      "seconds": 104.5,
-      "hp": 91.7,
+      "seconds": 39.1,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1311,11 +1420,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 10,
       "seed": 1,
       "active": true,
       "seconds": 47.1,
-      "hp": 120,
+      "hp": 115.5,
       "assists": 23,
       "interrupts": 3,
       "bursts": 7,
@@ -1323,11 +1433,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 10,
       "seed": 2,
       "active": false,
-      "seconds": 101.5,
-      "hp": 70.2,
+      "seconds": 42.1,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1335,11 +1446,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 10,
       "seed": 2,
       "active": true,
       "seconds": 48.9,
-      "hp": 119.5,
+      "hp": 93.6,
       "assists": 24,
       "interrupts": 2,
       "bursts": 7,
@@ -1347,11 +1459,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 10,
       "seed": 3,
       "active": false,
-      "seconds": 102.7,
-      "hp": 79.5,
+      "seconds": 42,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1359,11 +1472,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 10,
       "seed": 3,
       "active": true,
       "seconds": 48.9,
-      "hp": 119.5,
+      "hp": 93.6,
       "assists": 24,
       "interrupts": 1,
       "bursts": 7,
@@ -1371,11 +1485,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 10,
       "seed": 4,
       "active": false,
-      "seconds": 103.1,
-      "hp": 75.6,
+      "seconds": 41.7,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1383,11 +1498,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 10,
       "seed": 4,
       "active": true,
       "seconds": 45.9,
-      "hp": 120,
+      "hp": 90.7,
       "assists": 24,
       "interrupts": 3,
       "bursts": 7,
@@ -1395,11 +1511,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 10,
       "seed": 5,
       "active": false,
-      "seconds": 102.7,
-      "hp": 75.4,
+      "seconds": 39.9,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1407,11 +1524,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 10,
       "seed": 5,
       "active": true,
-      "seconds": 46.8,
-      "hp": 116.7,
+      "seconds": 46.6,
+      "hp": 111.8,
       "assists": 24,
       "interrupts": 4,
       "bursts": 7,
@@ -1419,11 +1537,12 @@
       "ultimates": 0
     },
     {
+      "status": "lose",
       "level": 10,
       "seed": 6,
       "active": false,
-      "seconds": 103.5,
-      "hp": 82.6,
+      "seconds": 38.7,
+      "hp": 0,
       "assists": 0,
       "interrupts": 0,
       "bursts": 0,
@@ -1431,11 +1550,12 @@
       "ultimates": 0
     },
     {
+      "status": "win",
       "level": 10,
       "seed": 6,
       "active": true,
       "seconds": 45.9,
-      "hp": 120,
+      "hp": 90.7,
       "assists": 24,
       "interrupts": 3,
       "bursts": 7,

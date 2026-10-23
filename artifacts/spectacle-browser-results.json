@@ -25,11 +25,11 @@
     "width": 375
   },
   "stats": {
-    "assists": 6,
+    "assists": 10,
     "interrupts": 0,
-    "bursts": 1,
+    "bursts": 3,
     "barrels": 0,
-    "ultimates": 2
+    "ultimates": 1
   },
   "errors": []
 }

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "bossSeen": true,
+  "result": {
+    "seconds": 34.63333333333393,
+    "charges": 2,
+    "stats": {
+      "assists": 8,
+      "interrupts": 3,
+      "bursts": 2,
+      "barrels": 2,
+      "ultimates": 2
+    },
+    "level": 20,
+    "region": "螢光森林"
+  },
+  "errors": []
+}

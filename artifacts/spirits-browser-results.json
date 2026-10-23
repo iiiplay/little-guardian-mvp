@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "layouts": [
+    {
+      "name": "mobile",
+      "x": 27.5,
+      "y": 85.3125,
+      "width": 320,
+      "height": 496.375
+    },
+    {
+      "name": "desktop",
+      "x": 757,
+      "y": 111.796875,
+      "width": 340,
+      "height": 496.375
+    },
+    {
+      "name": "small",
+      "x": 24,
+      "y": 59.859375,
+      "width": 272,
+      "height": 448.265625
+    }
+  ],
+  "wind": {
+    "interval": 0.764525993883792,
+    "hp": 172,
+    "max": 172,
+    "spirit": "wind"
+  },
+  "luck": {
+    "interval": 0.8202697776157493,
+    "hp": 172,
+    "spirit": "luck"
+  },
+  "naturalUnlockSeconds": 43.16666666666678,
+  "errors": []
+}
