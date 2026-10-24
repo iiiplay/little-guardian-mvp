@@ -1,4 +1,20 @@
-# 小小守護者 MVP 0.10 — 2026-10-24
+# 小小守護者 MVP 0.11 — 2026-10-24
+
+## 最新：30 關、霜晶遺跡與新 APK
+
+使用者要求先 commit／push 舊版本，再完成 30 關，缺少圖形先自行生成。開工前確認 c6fa21c 已 push、origin/main 與本機一致，沒有未提交變更。只修改 little-guardian-mvp，沒有碰 dungeon-100。
+
+第 21～30 關為「霜晶遺跡」，十張不同且全連通的破柱地圖；每波 6 隻，第三波 7 隻。新增 wisp 遠程施法與 golem 近戰，搭配原有 fly。冰靈 1.5 秒預警可打斷，冰紋 1.2 秒後一次性傷害及移速 −25%／2 秒，護盾擋傷害與減速。第 25 關起普通晶衛也留冰紋；第 30 關玄霜晶王在半血後從橫／直三格改為五格十字，攻擊間隔由 3.5 到 2.8 秒。地面標記上限 24，只落可走格。新增冰晶地形、投射物、慢速標記；玩家仍為 16px，舊握劍修正保留。
+
+新增 assets/frost_wisp.png、crystal_golem.png，使用內建 image_gen 生成的透明靜態 PNG，載入／離場擊飛都接妥。素材是原始 1254px 生成圖，以 canvas nearest-neighbor 繪製為 16／32px，沒有假稱逐影格動畫；來源及完整提示保留在 assets/GENERATED_ICE.md，ART_CREDITS.md 已補充。第三區冰晶地形為程式繪製。
+
+UI 三章頁籤，Lv.30 掉落／訂製／正規化，舊 20 關完存檔直接開 21，保留裝備／金幣／祝福／精靈／旅印。30 關完成返回營地，不開 31。版本 0.11.0，Android 0.11.0-test.1／110001，產物 dist/android/LittleGuardian-0.11.0-test.1.apk（約 2.69 MiB）；沿用同簽章與來源網址。test.2 安裝者可經同 Wi-Fi 更新，最初 test.1 仍需手動覆蓋安裝；外網更新尚未配置，雲端硬碟只是備份。
+
+驗證：完整 npm test 通過，新增 240 場第三區（全主動 80/80、純觀看 0/80、只救援 42/80），地形、冰紋／護盾／打斷、Boss 半血、Lv.30 舊存檔保存及重複結算皆驗證。前兩區 120 場固定結算 hash 與 141 組繪圖比較仍相同。真實按鈕、1× 自然時間完成第 21 關（29.3 秒模擬時間）和第 30 關（35.3 秒），看見 Boss、30 關結算、回營與 reload 存檔；375×667、320×568、1280×720 章節地圖與手機小螢幕結算皆通過，無 page errors。測試自然時間操作很積極，兩場都沒有消耗救援，不能當成真人難度評分。額外探索：Lv20 裝、全護甲在第 30 關普通／荊棘契約仍可能輸，可免費重新配祝福；沒有宣稱所有流派必勝。
+
+補查第 20 關自然時間 Boss 戰也通過，完成後開放第 21 關、不再顯示 20 關最終結算。campaign20_browser 的舊測試 fixture 改用新 browser context，避免上一個戰鬥在 reload 的 visibility-save 覆寫下一個測試存檔。
+
+Android assembleDebug／lintDebug、APK 同簽章／版本碼／內嵌遊戲與 LAN 真實下載校驗通過；尚未本次 Android 實機驗收。無廣告 SDK。玩法說明 CAMPAIGN30.md、測試 artifacts/campaign30-results.json、campaign30-browser-results.json、android-update-package-results.json 與 qa-ice-*／qa-chapter3-*／qa-boss30-*。下方為歷史紀錄。
 
 ## 最新：Android test.2 更新器與向右握劍修正
 

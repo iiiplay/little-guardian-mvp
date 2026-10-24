@@ -1,9 +1,9 @@
 {
   "passed": true,
-  "versionCode": 100002,
-  "versionName": "0.10.0-test.2",
-  "bytes": 1286333,
-  "sha256": "335ad6ccdd7517a7560ac3bae94a6909e57daa0d095facbca4d4d8165093b4ff",
+  "versionCode": 110001,
+  "versionName": "0.11.0-test.1",
+  "bytes": 2825085,
+  "sha256": "e820a9eeb4d2ecad56087b8c8acd5c15c16b82c2598f581bf701b1e3f7a31805",
   "signerSha256": "d460ba9fe7d0bbd5af5dd54819ca2eb23d6740f7a9e83c4ad3c5e2a0dee06b58",
   "checks": [
     "LAN manifest and APK download",

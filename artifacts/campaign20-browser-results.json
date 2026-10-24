@@ -2,12 +2,12 @@
   "passed": true,
   "bossSeen": true,
   "result": {
-    "seconds": 34.63333333333393,
-    "charges": 2,
+    "seconds": 34.80000000000059,
+    "charges": 1,
     "stats": {
-      "assists": 8,
-      "interrupts": 3,
-      "bursts": 2,
+      "assists": 7,
+      "interrupts": 2,
+      "bursts": 1,
       "barrels": 2,
       "ultimates": 2
     },

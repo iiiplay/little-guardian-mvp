@@ -1,9 +1,9 @@
 # Android 測試版
 
-執行 `npm run build:android`，產物為 `dist/android/LittleGuardian-0.10.0-test.2.apk` 與 `dist/android/update.json`。
+執行 `npm run build:android`，產物為 `dist/android/LittleGuardian-0.11.0-test.1.apk` 與 `dist/android/update.json`。
 需要 JDK 17、Android SDK platform 35 / build-tools 35.0.1；可透過 `JAVA_HOME`、`ANDROID_HOME` 指定安裝路徑。首次建置需要網路下載 Gradle 與依賴。已快取依賴時可執行 `powershell -ExecutionPolicy Bypass -File build/build-android.ps1 -Offline`。
 
-- 套件：`com.iiiplay.littleguardian`，版本：`0.10.0-test.2`，Android 8.0 以上。
+- 套件：`com.iiiplay.littleguardian`，版本：`0.11.0-test.1`，versionCode 110001，Android 8.0 以上。本版包含 30 關與霜晶遺跡。
 - 遊戲完整包進 APK，可離線遊玩；此版尚未整合廣告 SDK。
 - 手機下載 APK 後開啟，依系統提示允許該下載來源安裝應用程式。
 - 使用 Android debug 簽章，供內部測試，並非商店發行版。更新需使用相同套件與簽章；建置電腦的 debug keystore 請保留，勿提交到 Git。
@@ -14,7 +14,7 @@
 
 開啟 App → 檢查版本 → 有新版時顯示更新內容 → 玩家選擇下載 → 進度條 → 核對大小、SHA-256、套件名稱、版本碼及相同簽章 → 系統安裝確認。沒有新版直接進遊戲。網路失敗時可離線玩，亦可按「直接開始」略過檢查。安裝來源未授權時會引導至系統設定；拒絕授權仍可遊玩。
 
-舊 `test.1` 沒有更新器，必須手動覆蓋安裝 `test.2` 一次，**不要先解除安裝**。之後更高版本碼才會提示更新，不會重複更新相同版本或降版。
+舊 `0.10.0-test.1` 沒有更新器，必須手動覆蓋安裝新版一次，**不要先解除安裝**。已裝 `0.10.0-test.2` 時，開啟 App 即可在同 Wi-Fi 通道發現 `0.11.0-test.1`。跨遊戲版本的版本碼同樣遞增（100002 → 110001），不會重複更新相同版本或降版。
 
 目前測試通道：`http://192.168.0.33:8765/dist/android/update.json`。手機需連同 Wi-Fi，電腦 HTTP 伺服器需保持開啟；更換電腦 IP 需重新設定通道。Google Drive 資料夾是人工下載備份，**不是自動更新來源**。私人 GitHub 庫也不是匿名更新來源。
 

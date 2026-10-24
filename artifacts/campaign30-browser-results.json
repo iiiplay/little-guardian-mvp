@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "level": 21,
+      "seconds": 29.26666666666728,
+      "charges": 2,
+      "minFinalHp": 189,
+      "stats": {
+        "assists": 7,
+        "interrupts": 2,
+        "bursts": 2,
+        "barrels": 2,
+        "ultimates": 2
+      },
+      "bossSeen": false
+    },
+    {
+      "level": 30,
+      "seconds": 35.26666666666723,
+      "charges": 2,
+      "minFinalHp": 189,
+      "stats": {
+        "assists": 11,
+        "interrupts": 2,
+        "bursts": 3,
+        "barrels": 2,
+        "ultimates": 2
+      },
+      "bossSeen": true
+    }
+  ],
+  "errors": []
+}
