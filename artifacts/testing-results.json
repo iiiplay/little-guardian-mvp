@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "flows": [
+    "normal build hidden",
+    "debug entry",
+    "level validation",
+    "jump 30",
+    "Lv30 kit",
+    "original kit",
+    "formal save untouched",
+    "restore paused original battle",
+    "Android back"
+  ],
+  "errors": []
+}

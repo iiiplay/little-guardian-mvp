@@ -1,0 +1,11 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
+const {E,T,createGame}=vm.runInNewContext(['engine/engine.js','src/driver.js','src/equipment.js','src/journey.js','src/core.js','src/testing.js'].map(f=>fs.readFileSync(f,'utf8')).join('\n')+'\n({E:DungeonEngine,T:TestTools,createGame})',{console,structuredClone});
+let stored=null;const campaign=createGame({engine:E,store:{getItem:()=>stored,setItem:(k,v)=>{stored=v;}}}),original=stored;
+for(const level of [0,-1,31,2.5,NaN,Infinity,'30'])assert.equal(T.create({engine:E,level}),null);
+assert.equal(T.create({engine:E,level:30,profile:'bad'}),null);assert.equal(T.create({engine:E,level:30,profile:'mine'}),null);
+const t=T.create({engine:E,level:30});assert(t.start(30));assert.equal(t.run.cfg.id,30);assert.equal(t.save.perks.power,29);assert.equal(t.save.inventory[0].level,30);assert.equal(t.save.spirit,'wind');assert.equal(t.save.equipped.weapon,1);assert(t.run.hero.attack>60&&t.run.hero.maxHp>120);
+t.run.gold=100;t.run.status='win';t.tick(.03);assert(t.choose('power'));assert(t.save.cleared.includes(30));assert.equal(stored,original);assert.equal(campaign.save.unlocked,1);assert.equal(campaign.save.cleared.length,0);assert.equal(campaign.save.inventory.length,0);
+const base={version:6,unlocked:10,cleared:[1,2,3,4,5,6,7,8,9],gold:777,spirit:'luck',perks:{armor:9},pendingReward:9,inventory:[{id:71,slot:'weapon',rarity:3,level:10,trait:'chain'}],equipped:{weapon:71},journey:{marks:7,contract:'wind'}};
+const frozen=JSON.stringify(base),mine=T.create({engine:E,level:1,profile:'mine',baseSave:base});assert(mine.start(1));assert.equal(mine.save.inventory[0].id,71);assert.equal(mine.save.perks.armor,9);assert.equal(mine.save.spirit,'luck');assert.equal(mine.run.contract,undefined);mine.equip(71);mine.run.status='win';mine.tick(.03);assert.equal(JSON.stringify(base),frozen,'original data is not mutated');
+const normal=createGame({engine:E,store:{getItem:()=>stored,setItem:()=>{}}});assert(!normal.start(30),'formal locked levels remain locked');
+console.log('PASS: direct test entry, invalid levels, Lv30 kit, own kit/spirit and settlement isolation from formal save.');

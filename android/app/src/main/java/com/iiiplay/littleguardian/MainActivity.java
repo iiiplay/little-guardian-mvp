@@ -76,7 +76,7 @@ public final class MainActivity extends Activity {
             }
         });
         webView.setWebChromeClient(new WebChromeClient());
-        updater = new AppUpdater(this, () -> webView.loadUrl(ENTRY));
+        updater = new AppUpdater(this, () -> webView.loadUrl(ENTRY + (BuildConfig.DEBUG ? "?test=1" : "")));
         updater.start();
     }
 

@@ -12,6 +12,8 @@ const sources = {
   JOURNEY_JS: read('src/journey.js'),
   JOURNEY_UI_JS: read('src/journey-ui.js'),
   CORE_JS: read('src/core.js'),
+  TESTING_JS: read('src/testing.js'),
+  TESTING_UI_JS: read('src/testing-ui.js'),
   RENDER_JS: read('src/render.js'),
   AUDIO_JS: read('src/audio.js'),
   ANDROID_HOST_JS: read('src/android-host.js'),

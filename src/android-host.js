@@ -14,6 +14,7 @@ window.LittleGuardianHost={
     combatAudio.resume();return true;
   },
   back(){
+    if(modalType==='test-jump'){closeTestJump();return true;}
     if(modalType==='title')return false;
     if(modalType==='journal'){closeJournal();return true;}
     if(modalType==='spirits'){closeSpirits();return true;}

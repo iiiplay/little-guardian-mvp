@@ -1,5 +1,15 @@
 # 小小守護者 MVP 0.11 — 2026-10-24
 
+## 最新：直接跳關測試（Android 0.11.0-test.2）
+
+使用者要求不用先通關、可從第 30 關直接測試。新增 src/testing.js／testing-ui.js，主畫面「測試跳關」預設 30，輸入範圍 1～30，快捷 1／21／25／30。兩種配裝為關卡等級標準配置（精良吸血劍、普通反傷甲／暖光飾品、level−1 攻擊祝福，第 4 關起風芽）或複製正式配裝／祝福／精靈；測試使用普通冒險。URL `?test=1` 才顯示工具，Android BuildConfig.DEBUG 啟動加入此旗標，release 不自動加。
+
+正式 campaignGame 物件及 localStorage 保持原樣；testGame 用獨立記憶體 store，測試解鎖／通關／裝備／金幣不污染正式進度。退出後恢復原來暫停的戰鬥／地圖，重新開啟 App 回正式存檔。右下地圖 → 測試跳關／退出 → 返回正式冒險。返回鍵／Escape 可關閉面板。沒有增加第 31 關。
+
+測試：testing_test.cjs 檢查非法範圍、Lv30 標準裝、玩家配裝／精靈、測試結算隔離、正式鎖關仍有效；testing_browser.cjs 用真實按鈕進 30、切換兩種配裝、退出、回到原場戰鬥及確認 localStorage 位元組不變。375×667／320×568／1280×720 面板、320×568 退出按鈕及 Android back 通過；smoke 405 檢查與 Android host 瀏覽器回歸通過。沒有更改引擎／關卡平衡。APK assembleDebug／lintDebug、同簽章與下載內容核對；更新器與此次跳關仍需 Android 實機操作確認。
+
+新 APK：dist/android/LittleGuardian-0.11.0-test.2.apk／versionCode 110002，舊 test.1 可透過既有同 Wi-Fi 更新通道取得。雲端硬碟沿用原同步資料夾，操作說明 ANDROID.md。下方為歷史紀錄。
+
 ## 最新：30 關、霜晶遺跡與新 APK
 
 使用者要求先 commit／push 舊版本，再完成 30 關，缺少圖形先自行生成。開工前確認 c6fa21c 已 push、origin/main 與本機一致，沒有未提交變更。只修改 little-guardian-mvp，沒有碰 dungeon-100。
