@@ -341,7 +341,8 @@ function createRenderer(canvas,images){
       if(e.shield>0){circle(e.x*16,e.y*16,12,'#a8f0d4a0',true);circle(e.x*16,e.y*16,14,'#a8f0d436',true);}
       if(e.thorns){for(let i=0;i<6;i++){const a=i*Math.PI/3;ctx.fillStyle='#a7ebcf';ctx.fillRect(Math.round(e.x*16+Math.cos(a)*10),Math.round(e.y*16+Math.sin(a)*10),2,2);}}
       if(e.lifesteal||e.chain)ctx.filter=e.chain?'sepia(.7) saturate(2) hue-rotate(170deg)':'sepia(.7) saturate(2) hue-rotate(300deg)';
-      ctx.save();ctx.translate(e.x*16,e.y*16);ctx.rotate((e.face<0?-1:1)*(e.slash>0?(-1.6+(1-e.slash/.25)*3):.35));sprite('weapon_sword_1',e.face<0?-13:3,-7,16,16,e.face<0);ctx.restore();
+      // Mirror the complete hand/weapon pose around the hero, including its pivot.
+      ctx.save();ctx.translate(e.x*16,e.y*16);ctx.scale(e.face<0?-1:1,1);ctx.rotate(e.slash>0?(-1.6+(1-e.slash/.25)*3):.35);sprite('weapon_sword_1',-3,-7,16,16);ctx.restore();
       ctx.filter='none';
       if(e.slash>0)sprite('slash_effect_anim_f'+Math.min(2,Math.floor((1-e.slash/.25)*3)),e.x*16+(e.face<0?-24:0),e.y*16-12,24,24,e.face<0);
       circle(e.x*16,e.y*16+10,1,'#b6efd6');

@@ -23,6 +23,7 @@ public final class MainActivity extends Activity {
     private static final String ENTRY = "https://" + ORIGIN + "/assets/index.html";
     private WebView webView;
     private boolean foreground;
+    private AppUpdater updater;
 
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);
@@ -75,7 +76,8 @@ public final class MainActivity extends Activity {
             }
         });
         webView.setWebChromeClient(new WebChromeClient());
-        webView.loadUrl(ENTRY);
+        updater = new AppUpdater(this, () -> webView.loadUrl(ENTRY));
+        updater.start();
     }
 
     private void invoke(String method) {
@@ -97,6 +99,7 @@ public final class MainActivity extends Activity {
         super.onResume();
         foreground = true;
         if (webView != null) { webView.onResume(); webView.resumeTimers(); invoke("resume"); }
+        if (updater != null) updater.onResume();
     }
 
     @Override public void onBackPressed() {
@@ -108,6 +111,7 @@ public final class MainActivity extends Activity {
 
     @Override protected void onDestroy() {
         foreground = false;
+        if (updater != null) updater.destroy();
         if (webView != null) { webView.stopLoading(); webView.destroy(); webView = null; }
         super.onDestroy();
     }

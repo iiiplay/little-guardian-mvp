@@ -2,6 +2,11 @@ plugins { id 'com.android.application' }
 
 def gameVersion = new groovy.json.JsonSlurper().parse(file('../../package.json')).version
 def versionParts = gameVersion.tokenize('.').collect { it.toInteger() }
+def androidVersion = new Properties()
+file('../version.properties').withInputStream { androidVersion.load(it) }
+def buildNumber = androidVersion.getProperty('buildNumber').toInteger()
+if (buildNumber < 1 || buildNumber > 99) throw new GradleException('buildNumber must be 1..99')
+def updateUrl = providers.gradleProperty('updateManifestUrl').getOrElse('http://192.168.0.33:8765/dist/android/update.json')
 
 android {
     namespace 'com.iiiplay.littleguardian'
@@ -12,8 +17,9 @@ android {
         applicationId 'com.iiiplay.littleguardian'
         minSdk 26
         targetSdk 35
-        versionCode versionParts[0] * 1000000 + versionParts[1] * 10000 + versionParts[2] * 100 + 1
-        versionName "${gameVersion}-test.1"
+        versionCode versionParts[0] * 1000000 + versionParts[1] * 10000 + versionParts[2] * 100 + buildNumber
+        versionName "${gameVersion}-test.${buildNumber}"
+        buildConfigField 'String', 'UPDATE_MANIFEST_URL', groovy.json.JsonOutput.toJson(updateUrl)
     }
     buildFeatures { buildConfig true }
     compileOptions {

@@ -1,7 +1,8 @@
 const {chromium}=require('C:/Users/User/.agents/skills/gstack/node_modules/playwright'),{execFileSync}=require('child_process');
 const fs=require('fs'),assert=require('assert/strict');
 // Git's released renderer provides an independent pixel reference for this dev check.
-const reference=execFileSync('git',['show','5623797:src/render.js'],{encoding:'utf8'});
+// Apply the intentional right-hand anchor correction to the historical pixel reference.
+const reference=execFileSync('git',['show','5623797:src/render.js'],{encoding:'utf8'}).replace('e.face<0?-13:3','e.face<0?-13:-3');
 (async()=>{const browser=await chromium.launch({headless:true});try{
   const page=await browser.newPage({viewport:{width:375,height:667},deviceScaleFactor:2});await page.goto('http://127.0.0.1:8765/index.html');await page.locator('#start').waitFor();
   const comparisons=await page.evaluate(reference=>{

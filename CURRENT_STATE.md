@@ -1,5 +1,17 @@
 # 小小守護者 MVP 0.10 — 2026-10-24
 
+## 最新：Android test.2 更新器與向右握劍修正
+
+Android 首版 `06d1bb6` 已交付，使用者確認實機可安裝，並回報向右時劍的位置不正確。現已修正：以主角中心鏡像整個武器握持變換；原本向右的 x=3 應為 -3，向左姿勢不變。待機及四段揮擊都比對舊版向左變換並驗證左右對稱，141 組既有繪圖比較在套用這項刻意修正後通過。
+
+新增原生 AppUpdater／UpdatePolicy，開啟 App 檢查版本，提示更新內容、下載進度、大小／SHA256／套件名稱／版本碼／同簽章驗證，再交由 Android 系統確認安裝。可略過、離線遊玩、取消／重試；處理未知安裝來源授權及返回，沒有靜默安裝或 JS 原生橋。
+
+新 APK `dist/android/LittleGuardian-0.10.0-test.2.apk`，versionCode 100002。與 test.1 同簽章；使用者須手動覆蓋安裝一次 test.2，勿解除安裝。自動更新目前只配置同 Wi-Fi 的 `http://192.168.0.33:8765/dist/android/update.json`，需電腦服務在線；Google Drive 是人工下載備份，尚未配置外網更新來源，私人 GitHub 亦不能匿名讀取。已詢問是否需要外網下載，尚未收到該選項答案；不要將私人庫改公開或把憑證放進 APK。
+
+`npm run build:android` 產生 APK、SHA256、update.json；後續遞增 android/version.properties 的 buildNumber 並修改 update-notes.txt。可透過腳本參數指定 HTTPS 版本檔及 APK base URL，詳見 ANDROID.md。
+
+驗證：Gradle assembleDebug／lintDebug、14 項純 Java 更新政策拒絕與版本規則、LAN 真實下載版本檔及 APK／簽章延續／內含遊戲一致、瀏覽器 Android host 生命週期及左右劍畫面檢查通過。新更新器尚未 Android 實機操作；使用者回報的是舊 test.1 可安裝。廣告 SDK 仍未整合。下方為歷史紀錄。
+
 ## 最新：旅途手帳、再一局與隔日回訪
 
 使用者在完成效能優化 push／Android 免費廣告遊戲自評後，要求開始實作「讓玩家願意再開一局、隔天再回來」。已建立完整離線循環；未做 Android 封裝或廣告 SDK。本輪按既有流程驗證後 commit／push，最終提交以 git log 為準。修改只在 little-guardian-mvp。

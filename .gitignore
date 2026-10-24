@@ -10,3 +10,5 @@ android/app/src/main/assets/index.html
 android/local.properties
 dist/android/*.apk
 dist/android/*.sha256
+dist/android/update.json
+artifacts/update-policy-classes/

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "versionCode": 100002,
+  "versionName": "0.10.0-test.2",
+  "bytes": 1286333,
+  "sha256": "335ad6ccdd7517a7560ac3bae94a6909e57daa0d095facbca4d4d8165093b4ff",
+  "signerSha256": "d460ba9fe7d0bbd5af5dd54819ca2eb23d6740f7a9e83c4ad3c5e2a0dee06b58",
+  "checks": [
+    "LAN manifest and APK download",
+    "size and SHA256",
+    "same signer as test.1",
+    "package/version/minSdk",
+    "embedded game matches distribution"
+  ],
+  "androidRuntimeTested": false
+}
