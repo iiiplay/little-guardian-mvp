@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "name": "mobile",
+      "mutations": {
+        "before": 1700,
+        "after": 0,
+        "follows": true
+      },
+      "seconds": 38.7333333333337,
+      "errors": []
+    },
+    {
+      "name": "desktop",
+      "mutations": {
+        "before": 1700,
+        "after": 0,
+        "follows": true
+      },
+      "seconds": 2.6000000000000005,
+      "errors": []
+    }
+  ]
+}

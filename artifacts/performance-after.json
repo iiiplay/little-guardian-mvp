@@ -1,0 +1,27 @@
+{
+  "frames": 3000,
+  "counts": {
+    "drawImage": 60000,
+    "gradient": 18000,
+    "layoutReads": 0,
+    "measureText": 0
+  },
+  "timings": [
+    {
+      "level": 1,
+      "medianMs": 0.07299999997019768,
+      "slowestBatchMs": 0.3
+    },
+    {
+      "level": 11,
+      "medianMs": 0.1075,
+      "slowestBatchMs": 0.3129999999701977
+    },
+    {
+      "level": 20,
+      "medianMs": 0.07149999998509884,
+      "slowestBatchMs": 0.28399999998509884
+    }
+  ],
+  "unchangedHudMutations": 0
+}

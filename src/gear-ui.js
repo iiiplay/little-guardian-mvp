@@ -1,4 +1,10 @@
 let bagOrigin='title',bagSlot='weapon',bagPage=0,lootKey='';
+const targetPositions=new WeakMap();
+function positionTarget(button,x,y){
+  let previous=targetPositions.get(button);if(!previous){previous={x:null,y:null};targetPositions.set(button,previous);}
+  if(previous.x!==x){button.style.left=(x/13*100)+'%';previous.x=x;}
+  if(previous.y!==y){button.style.top=(y/15*100)+'%';previous.y=y;}
+}
 let spiritOrigin='title',spiritMode='title';
 function showSpirits(){
   spiritOrigin=modalType;spiritMode=game.mode;autoAt=0;if(game.mode==='play')game.pause();renderSpirits();
@@ -28,10 +34,10 @@ function renderGear(){
 }
 function updateLootTargets(){
   const s=game.run,active=game.mode==='play';
-  if(active)for(const b of $('loot-targets').querySelectorAll('[data-enemy-id]')){const e=s.enemies.find(e=>e.id===Number(b.dataset.enemyId));if(e){b.style.left=(e.x/13*100)+'%';b.style.top=(e.y/15*100)+'%';b.disabled=s.assistCharges<=0||s.assistCooldown>0||s.ultimateCast>0;b.classList.toggle('ready',!b.disabled);b.classList.toggle('danger',e.warning>0);b.classList.toggle('meteor',s.combo===2);}}
+  if(active)for(const b of $('loot-targets').querySelectorAll('[data-enemy-id]')){const e=s.enemies.find(e=>e.id===Number(b.dataset.enemyId));if(e){const disabled=s.assistCharges<=0||s.assistCooldown>0||s.ultimateCast>0;if(b.disabled!==disabled)b.disabled=disabled;b.classList.toggle('ready',!b.disabled);b.classList.toggle('danger',e.warning>0);b.classList.toggle('meteor',s.combo===2);}}
   const key=active?[s.cfg.id,s.barrels.filter(b=>b.hp>0).map(b=>b.id).join(','),s.chest,s.kills>=s.cfg.count,s.loot.map(d=>d.id).join(','),s.enemies.filter(e=>e.hp>0).map(e=>e.id).join(',')].join('|'):'inactive';if(key===lootKey)return;lootKey=key;
   const root=$('loot-targets');root.innerHTML='';if(!active)return;
-  function target(x,y,label,classes,handler){const b=document.createElement('button');b.className='loot-target '+classes;b.dataset.x=x;b.dataset.y=y;b.style.left=(x/13*100)+'%';b.style.top=(y/15*100)+'%';b.setAttribute('aria-label',label);b.title=label;b.onclick=handler;root.appendChild(b);return b;}
+  function target(x,y,label,classes,handler){const b=document.createElement('button');b.className='loot-target '+classes;b.dataset.x=x;b.dataset.y=y;positionTarget(b,x,y);b.setAttribute('aria-label',label);b.title=label;b.onclick=handler;root.appendChild(b);return b;}
   for(const e of s.enemies.filter(e=>e.hp>0)){const name=e.boss?(e.type==='skeleton'?'骸骨守林者':'史萊姆頭目'):e.type==='skeleton'?'骸骨巡守':e.type==='ranger'?'林地弓手':e.type==='slime'?'史萊姆':e.type==='goblin'?'哥布林':'飛行怪';const b=target(e.x,e.y,`星光補刀：${name} #${e.id}`,'assist-target',()=>{if(game.assist(e.id)){update();}});b.dataset.enemyId=e.id;b.disabled=s.assistCharges<=0||s.assistCooldown>0;}
   for(const b of s.barrels.filter(b=>b.hp>0)){const el=target(b.x,b.y,'引爆炸藥桶 #'+b.id,'barrel-target',()=>{if(game.detonate(b.id))update();});el.innerHTML='<span>引爆</span>';}
   if(!s.chest){const ready=s.kills>=s.cfg.count;const b=target(10.5,4.5,ready?'開啟寶箱，獲得裝備':'寶箱尚未解鎖，先打完第一波',ready?'chest-ready':'chest-locked',()=>{if(game.openChest()){update();}else toast('打完第一波，就能開啟寶箱');});b.innerHTML=`<span>${ready?'開箱':'第一波後'}</span>`;}
@@ -39,4 +45,4 @@ function updateLootTargets(){
 }
 bind('bag',showGear);
 
-function syncTargets(){const s=game.run;if(!s)return;for(const b of $('loot-targets').children){const e=b.dataset.enemyId?s.enemies.find(e=>e.id===Number(b.dataset.enemyId)):null;if(e){b.style.left=e.x/13*100+'%';b.style.top=e.y/15*100+'%';}b.style.visibility=s.ultimateCast>0?'hidden':'';}}
+function syncTargets(){const s=game.run;if(!s)return;for(const b of $('loot-targets').children){const e=b.dataset.enemyId?s.enemies.find(e=>e.id===Number(b.dataset.enemyId)):null;if(e)positionTarget(b,e.x,e.y);const visibility=s.ultimateCast>0?'hidden':'';if(b.style.visibility!==visibility)b.style.visibility=visibility;}}

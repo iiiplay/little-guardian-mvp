@@ -2,6 +2,12 @@ const ICONS={spark:'<path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.
 const icon=name=>`<svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[name]||ICONS.spark}</svg>`;
 document.querySelectorAll('[data-icon]').forEach(el=>el.innerHTML=icon(el.dataset.icon));
 const $=id=>document.getElementById(id);
+const uiStyles=new WeakMap();let lastPauseIcon='';
+function setText(id,value){const node=$(id),text=String(value);if(node.textContent!==text)node.textContent=text;}
+function setAttr(node,name,value){const text=String(value);if(node.getAttribute(name)!==text)node.setAttribute(name,text);}
+function setDisabled(id,value){const node=$(id);if(node.disabled!==value)node.disabled=value;}
+function setStyle(id,name,value){const node=$(id);let values=uiStyles.get(node);if(!values){values={};uiStyles.set(node,values);}if(values[name]!==value){node.style.setProperty(name,value);values[name]=value;}}
+
 let store;try{store=window.localStorage;}catch{store=null;}
 const game=createGame({engine:DungeonEngine,store});
 const images=Object.fromEntries(Object.entries(ASSETS).map(([key,src])=>{const im=new Image();im.src=src;return [key,im];}));
@@ -52,19 +58,20 @@ function showLose(){
 }
 function update(){
   const s=game.run||preview,h=s.hero;
-  $('pause').disabled=!['play','pause'].includes(game.mode);$('pause').innerHTML=icon(game.mode==='pause'?'play':'pause');$('pause').setAttribute('aria-label',game.mode==='pause'?'繼續冒險':'暫停');
-  $('chapter').textContent=String(s.cfg.id).padStart(2,'0')+' / '+s.cfg.title;$('progress').textContent=s.cfg.region+' · '+s.cfg.id+' / '+DungeonEngine.levels.length;$('timer').textContent=time(s.time);$('hp').textContent=Math.ceil(h.hp)+' / '+h.maxHp;$('health').style.width=(h.hp/h.maxHp*100)+'%';$('health').style.background=h.hp/h.maxHp<.3?'#ef788f':'#f4a4b2';
-  const bar=document.querySelector('[role="progressbar"]');bar.setAttribute('aria-valuenow',Math.ceil(h.hp));bar.setAttribute('aria-valuemax',h.maxHp);
-  $('gold').textContent='金幣 '+s.gold;$('bag').dataset.count=Math.min(99,game.save.inventory.length);updateLootTargets();document.querySelectorAll('.wave-dots i').forEach((el,i)=>el.classList.toggle('on',i<s.wave));
-  $('live').innerHTML='<i></i>'+(game.mode==='pause'?'暫停中':game.mode==='play'?(s.wave>=3&&!s.enemies.length?'前往出口':'第 '+Math.max(1,s.wave)+' / 3 波'):'自動探險');
-  $('assist-count').textContent=s.fever>0?'狂熱 '+Math.ceil(s.fever)+'s':'撿寶 '+s.manualLoot%5+'/5 → 狂熱';
-  $('energy').textContent='星能 '+('◆'.repeat(s.assistCharges))+('◇'.repeat(3-s.assistCharges))+(s.assistCharges<3?' · '+Math.ceil(DungeonEngine.B.energyRegen-s.energyClock)+'s +1':' · 點怪施放');
-  $('combo').textContent=s.combo>0?'連擊 '+s.combo+'/3 · '+Math.max(0,Math.ceil(s.comboUntil-s.time))+'s':'三連擊 → 流星';
-  const can=game.mode==='play'&&s.charges>0&&s.cooldown<=0;$('rescue').disabled=!can;
-  $('ultimate').disabled=game.mode!=='play'||s.ultimateCharge<100||s.ultimateCast>0||!s.enemies.some(e=>e.hp>0);$('ultimate').style.setProperty('--charge',s.ultimateCharge+'%');$('ultimate-info').textContent=s.ultimateCast>0?'全場轟擊！':s.ultimateCharge>=100?'READY · 全場擊飛':'蓄能 '+Math.floor(s.ultimateCharge)+'%';
-  $('rescue-title').textContent=s.charges<=0?'守護用完':s.cooldown>0?'冷卻 '+Math.ceil(s.cooldown)+'s':'守護降臨';$('rescue-info').textContent=s.charges<=0?'下一關補滿守護':`回血＋護盾 · ${s.charges} 次`;
+  setDisabled('pause',!['play','pause'].includes(game.mode));const pauseIcon=game.mode==='pause'?'play':'pause';if(lastPauseIcon!==pauseIcon){$('pause').innerHTML=icon(pauseIcon);lastPauseIcon=pauseIcon;}setAttr($('pause'),'aria-label',game.mode==='pause'?'繼續冒險':'暫停');
+  setText('chapter',String(s.cfg.id).padStart(2,'0')+' / '+s.cfg.title);setText('progress',s.cfg.region+' · '+s.cfg.id+' / '+DungeonEngine.levels.length);setText('timer',time(s.time));setText('hp',Math.ceil(h.hp)+' / '+h.maxHp);setStyle('health','width',(h.hp/h.maxHp*100)+'%');setStyle('health','background',h.hp/h.maxHp<.3?'#ef788f':'#f4a4b2');
+  const bar=document.querySelector('[role="progressbar"]');setAttr(bar,'aria-valuenow',Math.ceil(h.hp));setAttr(bar,'aria-valuemax',h.maxHp);
+  setText('gold','金幣 '+s.gold);setAttr($('bag'),'data-count',Math.min(99,game.save.inventory.length));updateLootTargets();document.querySelectorAll('.wave-dots i').forEach((el,i)=>el.classList.toggle('on',i<s.wave));
+  const liveLabel=(game.mode==='pause'?'暫停中':game.mode==='play'?(s.wave>=3&&!s.enemies.length?'前往出口':'第 '+Math.max(1,s.wave)+' / 3 波'):'自動探險');
+  if($('live').textContent!==liveLabel)$('live').innerHTML='<i></i>'+liveLabel;
+  setText('assist-count',s.fever>0?'狂熱 '+Math.ceil(s.fever)+'s':'撿寶 '+s.manualLoot%5+'/5 → 狂熱');
+  setText('energy','星能 '+('◆'.repeat(s.assistCharges))+('◇'.repeat(3-s.assistCharges))+(s.assistCharges<3?' · '+Math.ceil(DungeonEngine.B.energyRegen-s.energyClock)+'s +1':' · 點怪施放'));
+  setText('combo',s.combo>0?'連擊 '+s.combo+'/3 · '+Math.max(0,Math.ceil(s.comboUntil-s.time))+'s':'三連擊 → 流星');
+  const can=game.mode==='play'&&s.charges>0&&s.cooldown<=0;setDisabled('rescue',!can);
+  setDisabled('ultimate',game.mode!=='play'||s.ultimateCharge<100||s.ultimateCast>0||!s.enemies.some(e=>e.hp>0));setStyle('ultimate','--charge',s.ultimateCharge+'%');setText('ultimate-info',s.ultimateCast>0?'全場轟擊！':s.ultimateCharge>=100?'READY · 全場擊飛':'蓄能 '+Math.floor(s.ultimateCharge)+'%');
+  setText('rescue-title',s.charges<=0?'守護用完':s.cooldown>0?'冷卻 '+Math.ceil(s.cooldown)+'s':'守護降臨');setText('rescue-info',s.charges<=0?'下一關補滿守護':`回血＋護盾 · ${s.charges} 次`);
   const status=game.mode==='play'?(h.shield>0?'守護生效中，放心往前走吧':h.hp/h.maxHp<.4?'勇者需要你！點一下「守護降臨」':s.loot.length?'撿寶 +1 星能 · 集滿 5 件進入狂熱':!s.chest&&s.kills>=s.cfg.count?'寶箱解鎖了！點右上寶箱拿裝備':s.wave>=3&&!s.enemies.length?'打掃完畢！拿上寶物，往出口出發':!s.enemies.length?'喘口氣，準備下一波冒險':s.assistCharges>0&&s.assistCooldown<=0?'點怪星擊 · 紅圈時打斷有傷害加成':'勇者正在自動戰鬥 · 紅圈是出招預警'):game.mode==='pause'?'冒險暫停中':'小勇者已經準備好了';
-  if(status!==lastStatus){$('status').textContent=status;lastStatus=status;}
+  if(status!==lastStatus){setText('status',status);lastStatus=status;}
   if(game.mode!==lastMode){lastMode=game.mode;if(!['map','gear','spirits'].includes(modalType)){if(game.mode==='win')showWin();else if(game.mode==='lose')showLose();else if(game.mode==='pause')showPause();}}
 }
 bind('ultimate',()=>{game.ultimate();update();});
@@ -85,7 +92,7 @@ function frame(stamp){
   if(s.events.length){const events=s.events.splice(0);for(const e of events)if(e.type==='gear'){if(e.manual&&game.mode==='play')showTreasure(e.item);else if(modalType!=='gear')toast('獲得'+Equipment.rarities[e.item.rarity].name+'裝備：'+e.item.name+'！點盾牌穿戴');}for(const type of new Set(events.map(e=>e.type)))tone(type);}
   if(stamp-lastUiUpdate>100){update();lastUiUpdate=stamp;}
   if(autoAt&&game.mode==='win'&&modalType==='win'){
-    const seconds=Math.max(0,Math.ceil((autoAt-stamp)/1000));if($('auto'))$('auto').textContent=game.pendingUpgrade?`${seconds} 秒後自動選擇「磨亮小劍」`:`${seconds} 秒後自動繼續`;
+    const seconds=Math.max(0,Math.ceil((autoAt-stamp)/1000));if($('auto'))setText('auto',game.pendingUpgrade?`${seconds} 秒後自動選擇「磨亮小劍」`:`${seconds} 秒後自動繼續`);
     if(stamp>=autoAt){autoAt=0;if(game.pendingUpgrade)game.choose('power');continueAfterWin();}
   }
   tickTreasure(stamp);if(toastUntil&&stamp>toastUntil){$('toast').hidden=true;toastUntil=0;}requestAnimationFrame(frame);

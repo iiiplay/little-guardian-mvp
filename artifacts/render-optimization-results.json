@@ -1,0 +1,1696 @@
+{
+  "comparisons": [
+    {
+      "level": 1,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 1,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 1,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 1,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 1,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 1,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 1,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 2,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 2,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 2,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 2,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 2,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 2,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 2,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 3,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 3,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 3,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 3,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 3,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 3,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 3,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 4,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 4,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 4,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 4,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 4,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 4,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 4,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 5,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 5,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 5,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 5,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 5,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 5,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 5,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 6,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 6,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 6,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 6,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 6,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 6,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 6,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 7,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 7,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 7,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 7,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 7,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 7,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 7,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 8,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 8,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 8,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 8,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 8,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 8,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 8,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 9,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 9,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 9,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 9,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 9,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 9,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 9,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 10,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 10,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 10,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 10,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 10,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 10,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 10,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 11,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 11,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 11,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 11,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 11,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 11,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 11,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 12,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 12,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 12,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 12,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 12,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 12,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 12,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 13,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 13,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 13,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 13,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 13,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 13,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 13,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 14,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 14,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 14,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 14,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 14,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 14,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 14,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 15,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 15,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 15,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 15,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 15,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 15,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 15,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 16,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 16,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 16,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 16,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 16,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 16,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 16,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 17,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 17,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 17,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 17,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 17,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 17,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 17,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 18,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 18,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 18,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 18,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 18,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 18,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 18,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 19,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 19,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 19,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 19,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 19,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 19,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 19,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 20,
+      "kind": "base",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 20,
+      "kind": "shake",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 20,
+      "kind": "pickup",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 20,
+      "kind": "charge",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 20,
+      "kind": "impact",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 20,
+      "kind": "flyout",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 20,
+      "kind": "edited-map",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    },
+    {
+      "level": 11,
+      "kind": "late-image",
+      "world": {
+        "changed": 0,
+        "maxDelta": 0
+      },
+      "text": {
+        "changed": 0,
+        "maxDelta": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,965 @@
+{
+  "milliseconds": 2464.7552,
+  "runs": [
+    {
+      "level": 1,
+      "seed": 37,
+      "mode": "watch",
+      "status": "win",
+      "ticks": 1565,
+      "hash": "b00841f1673609e096a20a0cdcc1b50169bf32a3fbb9c272baf469c5d9be12a4"
+    },
+    {
+      "level": 1,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1565,
+      "hash": "b00841f1673609e096a20a0cdcc1b50169bf32a3fbb9c272baf469c5d9be12a4"
+    },
+    {
+      "level": 1,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 676,
+      "hash": "fb851e9c5cae99005db9b6b0880e6de23ef43c8cac50129a7830df8f57eeeedc"
+    },
+    {
+      "level": 1,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "win",
+      "ticks": 1566,
+      "hash": "f5522f3ffe62d198758cbda907f6d42f9bb125de5f0f944f27ab68ad9b459c26"
+    },
+    {
+      "level": 1,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1566,
+      "hash": "f5522f3ffe62d198758cbda907f6d42f9bb125de5f0f944f27ab68ad9b459c26"
+    },
+    {
+      "level": 1,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 652,
+      "hash": "e0e8c351b8696cd9adf9bed348341a66814ba933e39f76aabfa3b51429a9fc24"
+    },
+    {
+      "level": 2,
+      "seed": 37,
+      "mode": "watch",
+      "status": "win",
+      "ticks": 1951,
+      "hash": "5cc53cd8ca7d74b604cf62a9353c036bed1b1bd83b162e1b35f8375fe3be424b"
+    },
+    {
+      "level": 2,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1951,
+      "hash": "5cc53cd8ca7d74b604cf62a9353c036bed1b1bd83b162e1b35f8375fe3be424b"
+    },
+    {
+      "level": 2,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 785,
+      "hash": "4bb7804079c1d3df5980afa70568a1ef2062bf70b24db9079012c8b2ef157962"
+    },
+    {
+      "level": 2,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "win",
+      "ticks": 1888,
+      "hash": "5f525ef9ce67b6634278ab938b89dedecf852f972415b0f1cd6cf76de29b2359"
+    },
+    {
+      "level": 2,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1888,
+      "hash": "5f525ef9ce67b6634278ab938b89dedecf852f972415b0f1cd6cf76de29b2359"
+    },
+    {
+      "level": 2,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 785,
+      "hash": "2a2e016cce342195193652d7bf2f35b168806eb0f1f48ebe10141091a839b3bb"
+    },
+    {
+      "level": 3,
+      "seed": 37,
+      "mode": "watch",
+      "status": "win",
+      "ticks": 1696,
+      "hash": "5a939c053b69205c669245432f3d0f32b5ada3f09ff444a7fbf425ea5dd1864d"
+    },
+    {
+      "level": 3,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1696,
+      "hash": "5a939c053b69205c669245432f3d0f32b5ada3f09ff444a7fbf425ea5dd1864d"
+    },
+    {
+      "level": 3,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 786,
+      "hash": "01253a211f56b0b5baf18d1529f697779557e4706397a675e91f9dcf525fd1fd"
+    },
+    {
+      "level": 3,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "win",
+      "ticks": 1698,
+      "hash": "f2a7e616243dccaf36b1f035c9752b738318ddffd4499162c140f90e8d25f16b"
+    },
+    {
+      "level": 3,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1698,
+      "hash": "f2a7e616243dccaf36b1f035c9752b738318ddffd4499162c140f90e8d25f16b"
+    },
+    {
+      "level": 3,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 786,
+      "hash": "896c28cce8cb2d7d1e49e8b9eda22ec0d81f1f7c47d671c17db30c71e19f8bd9"
+    },
+    {
+      "level": 4,
+      "seed": 37,
+      "mode": "watch",
+      "status": "win",
+      "ticks": 1721,
+      "hash": "74b7bfefdbb65bfb457bc4a092ecff206b6a1a1c14715aa27550c011c546af9e"
+    },
+    {
+      "level": 4,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1721,
+      "hash": "74b7bfefdbb65bfb457bc4a092ecff206b6a1a1c14715aa27550c011c546af9e"
+    },
+    {
+      "level": 4,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 747,
+      "hash": "d3cdd5076a0a03bb11b76c5c86818188e4163760408879c4f85347bd77f193cf"
+    },
+    {
+      "level": 4,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "win",
+      "ticks": 1717,
+      "hash": "c0947f2b0687b07cec09e6e64e786afe279da73cf12b9d4e1e5f6a73e645770b"
+    },
+    {
+      "level": 4,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1717,
+      "hash": "c0947f2b0687b07cec09e6e64e786afe279da73cf12b9d4e1e5f6a73e645770b"
+    },
+    {
+      "level": 4,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 747,
+      "hash": "824e63d53a680416e29d2d49169d61845c9b8bb47f000f3b9a25a6edef4cb573"
+    },
+    {
+      "level": 5,
+      "seed": 37,
+      "mode": "watch",
+      "status": "win",
+      "ticks": 1796,
+      "hash": "f7d6237dc53c22d46a2b9bd1dfe50de1cdcc8731ebfe8006963c1f7d79a02a95"
+    },
+    {
+      "level": 5,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1796,
+      "hash": "f7d6237dc53c22d46a2b9bd1dfe50de1cdcc8731ebfe8006963c1f7d79a02a95"
+    },
+    {
+      "level": 5,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 776,
+      "hash": "077b883468094aaa5ef410dde2eb7ce13ac7133530a2324e368d5509456de900"
+    },
+    {
+      "level": 5,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "win",
+      "ticks": 1644,
+      "hash": "a96b0e7adc209c00181768c250553e6511659896d75d563d113876c3c14e9e60"
+    },
+    {
+      "level": 5,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1644,
+      "hash": "a96b0e7adc209c00181768c250553e6511659896d75d563d113876c3c14e9e60"
+    },
+    {
+      "level": 5,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 776,
+      "hash": "8d949ad45b3a654c79ce3510aa30755f2745bddd8f2ed91de971e583e487603e"
+    },
+    {
+      "level": 6,
+      "seed": 37,
+      "mode": "watch",
+      "status": "win",
+      "ticks": 1704,
+      "hash": "7e932563f11a020eb3b69f8ad4e9e0e51396665d998ea7c09e97d7221d58a844"
+    },
+    {
+      "level": 6,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1704,
+      "hash": "7e932563f11a020eb3b69f8ad4e9e0e51396665d998ea7c09e97d7221d58a844"
+    },
+    {
+      "level": 6,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 775,
+      "hash": "7a0f3073e6e2b2549b5f1cf8e3719b665801d945ab62455e56e1094082cf6903"
+    },
+    {
+      "level": 6,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "win",
+      "ticks": 1704,
+      "hash": "f11b90e745dba690284bbf0e072fcb6daffe2c5a0eac7d23124f61b305b8a73d"
+    },
+    {
+      "level": 6,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1704,
+      "hash": "f11b90e745dba690284bbf0e072fcb6daffe2c5a0eac7d23124f61b305b8a73d"
+    },
+    {
+      "level": 6,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 775,
+      "hash": "003e7cd659e7a648c47f40b280b2da025fcb34a00ef7e048abe90e9e5f9b902f"
+    },
+    {
+      "level": 7,
+      "seed": 37,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1476,
+      "hash": "ac92a5c7baa6e49fd06854d7524f4fc8cae36f8bca04e6d6346bec69ac60e5b5"
+    },
+    {
+      "level": 7,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1930,
+      "hash": "91e2ae8567d99ccbfc3dfac707c180907935daabf7cc64de1eb40ce801d397a3"
+    },
+    {
+      "level": 7,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 692,
+      "hash": "03d24134482892a451ee534a9d9c15e25e5761d4105f60e4d8aaed87e85575bc"
+    },
+    {
+      "level": 7,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "win",
+      "ticks": 1904,
+      "hash": "3a2e5ad1a3283b4c357583695459d9af4120018769cdecfdb5d5b141e5123f97"
+    },
+    {
+      "level": 7,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1920,
+      "hash": "823e6def1aa55cc8a74f183f9b2764148763665d327a3b03d8830c0c802ab493"
+    },
+    {
+      "level": 7,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 692,
+      "hash": "811969bd7f5338fa8ee896a3a1b9e59dd2eb229481c0a7a13e0008781d9dd7a4"
+    },
+    {
+      "level": 8,
+      "seed": 37,
+      "mode": "watch",
+      "status": "win",
+      "ticks": 1875,
+      "hash": "01d750082834b6ad7659b4aa2ad0c1e6a066f0ac6c6c76830fa31efa82eb4a81"
+    },
+    {
+      "level": 8,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1865,
+      "hash": "3cacbc7076c781cf45bcbe3e62fa864bd0d0893c4d083b305e734e33daacdbb6"
+    },
+    {
+      "level": 8,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 640,
+      "hash": "7e47b2bc8acfbe72e43c79e17569def09adf8c3aecc727f3b02a3e9a8ce33182"
+    },
+    {
+      "level": 8,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "win",
+      "ticks": 1970,
+      "hash": "2ac79ea000af0678c895783f8f2bf9cfe37898e596c99cebf69c22997e77994a"
+    },
+    {
+      "level": 8,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1995,
+      "hash": "be90368f076c538576c170650dbd70982a15ec0c67573f26b2f486eab175ab26"
+    },
+    {
+      "level": 8,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 640,
+      "hash": "f7dd19a72bd75149a768f237bc771e89358b50df0bd2e16bbc35daa22a303fd0"
+    },
+    {
+      "level": 9,
+      "seed": 37,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1421,
+      "hash": "9c2c37f9c94cf0e5d3e6b94785b18920828477a156554e9d0b3bac41af79cea7"
+    },
+    {
+      "level": 9,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1980,
+      "hash": "14fad9e33895e24d76bd429c64b1bcaeb95b7ab8896d8893d8a27cdfe923fea9"
+    },
+    {
+      "level": 9,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 692,
+      "hash": "8825c972d99a264233feadb6575a1fd5f675e0239ba45988b75908e5d44457bf"
+    },
+    {
+      "level": 9,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1480,
+      "hash": "f66e5e645d7acfef9dbf8f7d6e626d9a09283794753c6460c9586ebbe962648b"
+    },
+    {
+      "level": 9,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 1948,
+      "hash": "fcf8479f8ef424930a8a964ab4c5a4799947e1d6fbade41b9b04a1d25ebf2193"
+    },
+    {
+      "level": 9,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 689,
+      "hash": "d8efcedaa79880dc866e299f5f253ad0cb87a5874f8af4ba646f42543271fa50"
+    },
+    {
+      "level": 10,
+      "seed": 37,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1305,
+      "hash": "b68d20fffb4fdc52bc829360f775cdc8e9d808e78b57227e1acfd9183dfc7d63"
+    },
+    {
+      "level": 10,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2080,
+      "hash": "6971ad4de49bdc7d99ca4b1012abb44cd83e26640fc48f995e57f5db6d115728"
+    },
+    {
+      "level": 10,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 686,
+      "hash": "9b2f3f4a0a73a10dfd651213609aa98a42d8be09d9597f70b550c868f7d9bbfa"
+    },
+    {
+      "level": 10,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1306,
+      "hash": "66ca0e7a06ad94f4778206d47e2329585ce83a803666fc71fc77bca95a5eeb54"
+    },
+    {
+      "level": 10,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2062,
+      "hash": "2f2702c3dc9dd79126be6e6ddc5ffc1c02cc3a2be9990b0959f799ff1afd5148"
+    },
+    {
+      "level": 10,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 686,
+      "hash": "6e4aa9a9870c7b6c38a56d45eb3ef26716e42a29bf44082940b8fe612df58ff2"
+    },
+    {
+      "level": 11,
+      "seed": 37,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1587,
+      "hash": "ed71e715cc264dbf98e9fb0f0122f66b5b25d3cca69bfbec6a0235eba78ca3a0"
+    },
+    {
+      "level": 11,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2274,
+      "hash": "deb68c0fa0bdfd1dd3ded55c766c82e52bbf0ec409e409cccddf4926eec80e99"
+    },
+    {
+      "level": 11,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 763,
+      "hash": "93ce4bc51f57a591ef4a108155c5136e3416a706b89caad605d943b576f9e38b"
+    },
+    {
+      "level": 11,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1578,
+      "hash": "c2c197e8a8bea58d45a8fd401245c5642299b993bbcc79354d3d7163654e4703"
+    },
+    {
+      "level": 11,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2318,
+      "hash": "77b50ca5a1275249f4ff95216087f14b1b41c771aae3fdaf405b5cfdfc47b777"
+    },
+    {
+      "level": 11,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 763,
+      "hash": "15372cba99fee1a33d3260aa4b2566f5f800df9e010914bcc3ae6fe69651c569"
+    },
+    {
+      "level": 12,
+      "seed": 37,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1795,
+      "hash": "af90855a6fbda7c381f6be760dca6237a6380103b9b849d4537263bf5414d275"
+    },
+    {
+      "level": 12,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2171,
+      "hash": "129f72082cd38d96f04202047c5f8cc4e054f56ea8708d68fd6adefec696c1a4"
+    },
+    {
+      "level": 12,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 643,
+      "hash": "ee0afe872fff2b3bd389b68838bfc1b78448c104cb978ffcdd2ee14dcab13c69"
+    },
+    {
+      "level": 12,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1667,
+      "hash": "a9533748aa3a03727ca5da4101b730839df3deb4f616e3a62b6d7e8ab75b82f0"
+    },
+    {
+      "level": 12,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2172,
+      "hash": "c7bfb84a000f34dc34b7387a9108db87f38dac6e122d3d61d1b125ed93fb3375"
+    },
+    {
+      "level": 12,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 643,
+      "hash": "e4beb263ad9569f049f8a82c340b4bd977b00eb325c6cca0390908ea31b57d10"
+    },
+    {
+      "level": 13,
+      "seed": 37,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1466,
+      "hash": "95eb6084427747389092be4367e128f1893b4d0c0c77c4a2942bb5e03481da18"
+    },
+    {
+      "level": 13,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2284,
+      "hash": "acd11e449e4687e1286a069074c07d2085a5fa4b864b1575180a8b5bc15b51fc"
+    },
+    {
+      "level": 13,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 835,
+      "hash": "04a679cf6e4df17a8adfd12f1e068c572ec5e736b10408dedd1b062fb250e6d5"
+    },
+    {
+      "level": 13,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1459,
+      "hash": "8f7e8650063882b75bf418c3bebb39186a9709e6ea39250150d685c451bdbda7"
+    },
+    {
+      "level": 13,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2296,
+      "hash": "70e7d7d27bd69440663e54cf6d910ce408b00ccc7fa49cd56fe71c2598c612ff"
+    },
+    {
+      "level": 13,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 782,
+      "hash": "de7aa45bab6224000db2cfddb4f5d43c91c7d2bf9341d8360ad6f191c2a643fe"
+    },
+    {
+      "level": 14,
+      "seed": 37,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1478,
+      "hash": "2212fd7f26bf9415f2f576641c92b92a57ca905fa1037db3d9c8d26c84106ff2"
+    },
+    {
+      "level": 14,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2187,
+      "hash": "43d1708add85ddca0e13a2dd0b285fa1d9c4486b5ef4882f191b7101949cd356"
+    },
+    {
+      "level": 14,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 786,
+      "hash": "a4e733e60bdad90e63c59fcba8a1bae6e5f76960f434574c1c6ef3a97d217f59"
+    },
+    {
+      "level": 14,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1052,
+      "hash": "4ce93132917d6ded3ddb931453c07ab5c7eed38a4bdcf4572eadd68edfb588cb"
+    },
+    {
+      "level": 14,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "lose",
+      "ticks": 1665,
+      "hash": "318b6143f93827229c8c105ce0936281b373838cd946befbefc7b255519df411"
+    },
+    {
+      "level": 14,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 786,
+      "hash": "4d0c30f443ef66632e698c88cee923294a653bc588cdbd9ff62ebdf545c97672"
+    },
+    {
+      "level": 15,
+      "seed": 37,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1412,
+      "hash": "4ecc7377af861c1bdcaa6fca3cc8baae8171eeec31b3e98a87d11b2430d59ce3"
+    },
+    {
+      "level": 15,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2184,
+      "hash": "3fdd44c747f92e554b2c02efd0b3f99d34fff3c2e2beec20cd85c0f0f502de79"
+    },
+    {
+      "level": 15,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 771,
+      "hash": "af4e270e609858b83f69bee5f6c3a21eadd475894cd50ebe2aa5fd8c70ad3055"
+    },
+    {
+      "level": 15,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1359,
+      "hash": "7dc30e404b4fb958833e824a5f5f9ac604ca8aca55b4a5577b4c8b7d2b9327ca"
+    },
+    {
+      "level": 15,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2087,
+      "hash": "4a3bf65a07ea6283253c909b1f7dbe2708a2ce41c722f84205e4dc8a24b5acde"
+    },
+    {
+      "level": 15,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 771,
+      "hash": "d3f891735334f1e39061160525cedb9b2ec8fddfff25f49b85fde5e21968210b"
+    },
+    {
+      "level": 16,
+      "seed": 37,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1394,
+      "hash": "924c9fcc841afc805c2728f5bb0778797084d40009f17ce2956782f735f82b02"
+    },
+    {
+      "level": 16,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2143,
+      "hash": "c71b5a92594aea2e1c87eecaafe04df8f4de83789074d99f47e6f0af732739c2"
+    },
+    {
+      "level": 16,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 696,
+      "hash": "269c790359a5fece27a47e30bdc27cc2a6ca855c0b0cb139c15763834e54ad91"
+    },
+    {
+      "level": 16,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1460,
+      "hash": "6c2d6bbe822e802f23e6e3931014732f2a5a4e70e637399b9a1b0cd0ad35620f"
+    },
+    {
+      "level": 16,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2155,
+      "hash": "16df5a20bc9bd379fb6ec87287bb7b246ab3cb2c20b9c95840c0223d3573314c"
+    },
+    {
+      "level": 16,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 696,
+      "hash": "fceb15d976302fd09f931ee465d03e8ca32fd8f10c169f5b1c38def70c680fcc"
+    },
+    {
+      "level": 17,
+      "seed": 37,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1401,
+      "hash": "74be0818bd336e643c005084d983220922c4d92a6878c7df600342c74366e791"
+    },
+    {
+      "level": 17,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2133,
+      "hash": "8235e81abfeedde6ea6aa6fc1371a5f463fabf1c7abe89f124688796e1323c3e"
+    },
+    {
+      "level": 17,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 740,
+      "hash": "f721a6992743a8232de1e0a6020293724a80a3bec46f3c876631a9094b5f0da6"
+    },
+    {
+      "level": 17,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1384,
+      "hash": "c09b5aee699f4e7d288006d127ef9d9777bcec6e9b12727826bf6098a4f81583"
+    },
+    {
+      "level": 17,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2157,
+      "hash": "df86f09e16ceeaf2e3db9bff0c05f77063e6fc44a220a8d8e6095c8687c6991b"
+    },
+    {
+      "level": 17,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 740,
+      "hash": "5032056a28f141414c110f40e63c645107608ab90751fe799ac24f4e4847f2d9"
+    },
+    {
+      "level": 18,
+      "seed": 37,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 900,
+      "hash": "09ee52ac185a24706146f9614de9a14008c4cbf82e2148f64bae19304d2d98ae"
+    },
+    {
+      "level": 18,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "lose",
+      "ticks": 1470,
+      "hash": "2fb4e583e468988809c54034dbcd56e44d2a6fdcb9c3effa2df4cfa708959e0f"
+    },
+    {
+      "level": 18,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 769,
+      "hash": "3a5adbf56904c77c4abd54834e9118753808d7229468ec0eefeec0c9f9fc9b08"
+    },
+    {
+      "level": 18,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 895,
+      "hash": "5618c0d587656f572882624ba4545683eec65ce5126a88b76409110b28591d5e"
+    },
+    {
+      "level": 18,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "lose",
+      "ticks": 1460,
+      "hash": "3ee68833a2f7afcd5dd9356dc4e863e35dda011881a0bf68635a3afda7c2f884"
+    },
+    {
+      "level": 18,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 711,
+      "hash": "7a376642ae04f3ddee7837d49a2e959a4c2564ff36eaace0ffe553667ca7b55c"
+    },
+    {
+      "level": 19,
+      "seed": 37,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1452,
+      "hash": "c268ea477c733ff93728c10d863e3da4f150a95e6228127e42223588616362bd"
+    },
+    {
+      "level": 19,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2254,
+      "hash": "e11fcd92c1705b770907282496e0d6589e1d0cbb2b8fb09df8f8ac7d1ce9b329"
+    },
+    {
+      "level": 19,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 771,
+      "hash": "34ed9b07edd06539b9cddb92fff0666c447d6619a9cdac886c314f1ee4ffd610"
+    },
+    {
+      "level": 19,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1518,
+      "hash": "b2046d07960f4ff99e622cac431135a1ab18983879ac7bb953437d943e08b603"
+    },
+    {
+      "level": 19,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2260,
+      "hash": "c19c4c73697a1962fe56a52ff3c9e8ba601b68ee4c19b4e9a3d4e4f53fec7e0b"
+    },
+    {
+      "level": 19,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 771,
+      "hash": "5e559e384432175fef4c011e92c8be023488818475ad89af661b85c24d46c9c6"
+    },
+    {
+      "level": 20,
+      "seed": 37,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 897,
+      "hash": "d000c6a6e1f993a6b632d7cbd1820ed7146e8d734494857966bc790afcc7fa31"
+    },
+    {
+      "level": 20,
+      "seed": 37,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2399,
+      "hash": "bb68d7993ee1124f8d418a6fa1777313be738e90ff4c02cea66de79022da826a"
+    },
+    {
+      "level": 20,
+      "seed": 37,
+      "mode": "active",
+      "status": "win",
+      "ticks": 839,
+      "hash": "e730c988af27032e7d58c252b968dcd5785c0d24dfa8389c8d6781632705c770"
+    },
+    {
+      "level": 20,
+      "seed": 7919,
+      "mode": "watch",
+      "status": "lose",
+      "ticks": 1014,
+      "hash": "4380ea93a66725d4cbc73b2240c41510f66fde219493e23f80e77ea989c9bcc4"
+    },
+    {
+      "level": 20,
+      "seed": 7919,
+      "mode": "rescue",
+      "status": "win",
+      "ticks": 2279,
+      "hash": "75f8bf74122c786737b3d0a835ffbe608f0daef36128f6999318d9882745adb0"
+    },
+    {
+      "level": 20,
+      "seed": 7919,
+      "mode": "active",
+      "status": "win",
+      "ticks": 839,
+      "hash": "5a06632253103116ffc98bad8f394b5402b57f388a7b5e816068ced9846f6d14"
+    }
+  ]
+}

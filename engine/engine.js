@@ -51,13 +51,29 @@ const DungeonEngine = (() => {
   function emit(s,type,data={}){s.events.push({type,...data});}
   function effect(s,x,y,text,color='#f4dda4',kind='text'){s.effects.push({x,y,text,color,kind,age:0,life:kind==='death'?.5:1});}
   const walkable=(s,x,y)=>s.map[Math.floor(y)]?.[Math.floor(x)]==='.';
+  // Scratch storage lives outside saves and is released when its map is collected.
+  // Map contents are still read on every search, so edits never leave stale routes.
+  const searches=new WeakMap();
   function next(s,a,b){
     const sx=Math.floor(a.x),sy=Math.floor(a.y),tx=Math.floor(b.x),ty=Math.floor(b.y);
     if(sx===tx&&sy===ty)return b;
-    const queue=[[sx,sy]],visited=new Set([sx+','+sy]),parents=new Map();
-    for(let k=0;k<queue.length;k++){const [x,y]=queue[k];if(x===tx&&y===ty){let p=[x,y];while(parents.get(p.join(','))?.join(',')!==[sx,sy].join(',')){p=parents.get(p.join(','));if(!p)return a;}return {x:p[0]+.5,y:p[1]+.5};}
-      for(const [dx,dy] of [[0,-1],[1,0],[0,1],[-1,0]]){const nx=x+dx,ny=y+dy,key=nx+','+ny;if(!visited.has(key)&&walkable(s,nx,ny)){visited.add(key);parents.set(key,[x,y]);queue.push([nx,ny]);}}
-    }return a;
+    const width=s.map[0].length,height=s.map.length,size=width*height;
+    if(sx<0||sx>=width||sy<0||sy>=height||tx<0||tx>=width||ty<0||ty>=height)return a;
+    let work=searches.get(s.map);
+    if(!work||work.width!==width||work.height!==height){work={width,height,queue:new Int32Array(size),parents:new Int32Array(size),seen:new Uint32Array(size),epoch:0};searches.set(s.map,work);}
+    if(work.epoch===0xffffffff){work.seen.fill(0);work.epoch=0;}
+    const epoch=++work.epoch,{queue,parents,seen}=work,start=sy*width+sx,goal=ty*width+tx;
+    let tail=1;queue[0]=start;seen[start]=epoch;
+    for(let head=0;head<tail;head++){
+      const cell=queue[head],x=cell%width,y=Math.floor(cell/width);
+      if(cell===goal){let p=cell;while(parents[p]!==start)p=parents[p];return {x:p%width+.5,y:Math.floor(p/width)+.5};}
+      // Preserve the original up/right/down/left order, including shortest-path ties.
+      for(let direction=0;direction<4;direction++){
+        const nx=x+(direction===1?1:direction===3?-1:0),ny=y+(direction===2?1:direction===0?-1:0),key=ny*width+nx;
+        if(nx>=0&&nx<width&&ny>=0&&ny<height&&seen[key]!==epoch&&walkable(s,nx,ny)){seen[key]=epoch;parents[key]=cell;queue[tail++]=key;}
+      }
+    }
+    return a;
   }
   function move(s,a,target,speed,dt){const p=next(s,a,target),dx=p.x-a.x,dy=p.y-a.y,d=Math.hypot(dx,dy);a.moving=d>.04;if(!a.moving)return;if(Math.abs(dx)>.02)a.face=dx>0?1:-1;const t=Math.min(1,speed*dt/d);a.x+=dx*t;a.y+=dy*t;}
   function spawn(s){
