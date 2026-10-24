@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "flows": [
+    "back pause/resume",
+    "background simulation freeze",
+    "audio suspension",
+    "journal owner",
+    "treasure countdown reset",
+    "pending reward resolution",
+    "title exit"
+  ],
+  "errors": []
+}

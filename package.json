@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "node build/build.js",
+    "build:android": "powershell -ExecutionPolicy Bypass -File build/build-android.ps1",
     "test": "node tests/smoke_test.js && node tests/equipment_test.cjs && node tests/traits_test.cjs && node tests/forge_assist_test.cjs && node tests/combat_test.cjs && node tests/spectacle_test.cjs && node tests/difficulty_regression.cjs && node tests/spirits_test.cjs && node tests/campaign20_test.cjs && node tests/optimization_test.cjs && node tests/journey_test.cjs && node tests/contracts_balance.cjs",
     "test:optimization": "node tests/optimization_test.cjs && node tests/render_optimization_browser.cjs && node tests/optimization_browser.cjs",
     "benchmark": "node tests/optimization_scenarios.cjs && node tests/performance_browser.cjs"

@@ -1,0 +1,40 @@
+plugins { id 'com.android.application' }
+
+def gameVersion = new groovy.json.JsonSlurper().parse(file('../../package.json')).version
+def versionParts = gameVersion.tokenize('.').collect { it.toInteger() }
+
+android {
+    namespace 'com.iiiplay.littleguardian'
+    compileSdk 35
+    buildToolsVersion '35.0.1'
+
+    defaultConfig {
+        applicationId 'com.iiiplay.littleguardian'
+        minSdk 26
+        targetSdk 35
+        versionCode versionParts[0] * 1000000 + versionParts[1] * 10000 + versionParts[2] * 100 + 1
+        versionName "${gameVersion}-test.1"
+    }
+    buildFeatures { buildConfig true }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    buildTypes { debug { debuggable true } }
+}
+
+dependencies { implementation 'androidx.webkit:webkit:1.14.0' }
+
+// The generated HTML remains the single source for the Android asset, too.
+tasks.register('syncGame', Copy) {
+    from '../../dist/game.html'
+    into 'src/main/assets'
+    rename 'game.html', 'index.html'
+    doFirst {
+        if (!file('../../dist/game.html').isFile()) {
+            throw new GradleException('Run npm run build before building the APK.')
+        }
+    }
+}
+tasks.named('preBuild').configure { dependsOn 'syncGame' }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }

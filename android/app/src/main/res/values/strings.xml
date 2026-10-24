@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">小小守護者</string>
+    <color name="launcher_background">#1d2130</color>
+    <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">#1d2130</item>
+        <item name="android:navigationBarColor">#1d2130</item>
+        <item name="android:windowBackground">#1d2130</item>
+        <item name="android:colorAccent">#a7ebcf</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+</resources>

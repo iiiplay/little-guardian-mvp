@@ -435,7 +435,7 @@ function createCombatAudio(makeContext=()=>new(window.AudioContext||window.webki
       case 'wave':note(160,90,.2,.2);note(240,140,.22,.14,'triangle',.14);break;
     }
   }
-  return {play,unlock,mute(value){if(master)master.gain.setTargetAtTime(value?0:.32,context.currentTime,.015);},get state(){return context?.state||'locked';}};
+  return {play,unlock,suspend(){if(context?.state==='running')context.suspend().catch(()=>{});},resume(){if(context?.state==='suspended')context.resume().catch(()=>{});},mute(value){if(master)master.gain.setTargetAtTime(value?0:.32,context.currentTime,.015);},get state(){return context?.state||'locked';}};
 }
 
 const ICONS={spark:'<path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z"/><path d="m19 2 .8 2.2L22 5l-2.2.8L19 8l-.8-2.2L16 5l2.2-.8Z"/>',heart:'<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>',pause:'<path d="M8 5v14M16 5v14"/>',play:'<path d="m8 4 12 8-12 8Z"/>',grid:'<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>',mute:'<path d="m11 4-6 5H2v6h3l6 5ZM16 9l6 6m0-6-6 6"/>',sound:'<path d="m11 4-6 5H2v6h3l6 5ZM15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>',sword:'<path d="m16 3 5 0 0 5-11 11-5-5ZM3 13l8 8M3 21l4-4"/>',wing:'<path d="M21 3C12 3 4 8 3 15l6-2-1 6c7-1 12-7 13-16Z"/><path d="m8 16 8-8"/>',shield:'<path d="m12 2 8 4v6c0 5-8 10-8 10S4 17 4 12V6Z"/><path d="m8 12 3 3 5-6"/>'};
@@ -455,8 +455,9 @@ const renderer=createRenderer($('game'),images);
 let preview=DungeonEngine.begin(game.save.unlocked,game.save.perks),lastMode='',modalType='',autoAt=0,toastUntil=0,lastStamp=0,visualTime=0,accumulator=0,soundOn=true,audio=null,returnFocus=null,lastStatus='',lastUiUpdate=0;
 const time=t=>`${Math.floor(t/60).toString().padStart(2,'0')}:${Math.floor(t%60).toString().padStart(2,'0')}`;
 function toast(text){$('toast').textContent=text;$('toast').hidden=false;toastUntil=performance.now()+2400;}
+let hostSuspended=false;
 const combatAudio=createCombatAudio();let hitStop=0,lastHitSerial=0;
-function tone(type){if(!soundOn)return;try{combatAudio.play(type);}catch{soundOn=false;}}
+function tone(type){if(!soundOn||hostSuspended)return;try{combatAudio.play(type);}catch{soundOn=false;}}
 function dialog(html,type){returnFocus=document.activeElement;$('veil').hidden=false;$('dialog').innerHTML=html;modalType=type;lastMode=game.mode;$('dialog').querySelectorAll('[data-open-gear]').forEach(b=>b.onclick=showGear);$('dialog').querySelectorAll('[data-open-spirits]').forEach(b=>b.onclick=showSpirits);$('dialog').querySelectorAll('[data-open-journal]').forEach(b=>b.onclick=showJournal);requestAnimationFrame(()=>$('dialog').querySelector('button:not(:disabled)')?.focus({preventScroll:true}));}
 function closeDialog(){autoAt=0;$('veil').hidden=true;modalType='';returnFocus?.focus?.({preventScroll:true});}
 function bind(id,fn){$(id)?.addEventListener('click',fn);}
@@ -526,6 +527,7 @@ document.addEventListener('keydown',e=>{
   if(e.key==='Tab'&&!$('veil').hidden){const btns=[...$('dialog').querySelectorAll('button:not(:disabled)')],first=btns[0],last=btns.at(-1);if(e.shiftKey&&document.activeElement===first){last.focus();e.preventDefault();}else if(!e.shiftKey&&document.activeElement===last){first.focus();e.preventDefault();}}
 });
 function frame(stamp){
+  if(hostSuspended){lastStamp=0;requestAnimationFrame(frame);return;}
   const dt=lastStamp?Math.min(.1,(stamp-lastStamp)/1000):0;lastStamp=stamp;visualTime+=dt;
   hitStop=Math.max(0,hitStop-dt);if(game.mode==='play'&&hitStop<=0){accumulator+=dt*game.speed;let safety=0;while(accumulator>=1/30&&safety++<8){game.tick(1/30);accumulator-=1/30;if(game.mode!=='play'){accumulator=0;break;}}}
   const s=game.run||preview;if(s.hitSerial!==lastHitSerial){lastHitSerial=s.hitSerial;if(!matchMedia('(prefers-reduced-motion: reduce)').matches)hitStop=s.impactPower>=2?.065:.025;}renderer.draw(s,game.mode==='pause'?s.time:visualTime);syncTargets();
@@ -643,6 +645,39 @@ function renderJournal(){
   bind('journal-craft-again',()=>{journalReceipt=null;renderJournal();});bind('journal-open-bag',()=>{closeJournal();showGear();});
 }
 function tickJournal(stamp){if(modalType!=='journal'||stamp-journalTick<1000)return;journalTick=stamp;if(game.journal().day!==journalDay)renderJournal();}
+
+// Called only by the Android Activity. No native bridge or device permissions are exposed.
+window.LittleGuardianHost={
+  pause(){
+    hostSuspended=true;
+    if(game.mode==='play')game.pause();
+    autoAt=0;if(modalType==='treasure')treasureUntil=0;
+    lastStamp=0;accumulator=0;combatAudio.suspend();update();
+    return true;
+  },
+  resume(){
+    hostSuspended=false;lastStamp=0;accumulator=0;
+    if(game.mode==='win'&&modalType==='win')autoAt=performance.now()+12000;
+    if(modalType==='treasure')treasureUntil=performance.now()+8000;
+    combatAudio.resume();return true;
+  },
+  back(){
+    if(modalType==='title')return false;
+    if(modalType==='journal'){closeJournal();return true;}
+    if(modalType==='spirits'){closeSpirits();return true;}
+    if(modalType==='forge'){renderGear();return true;}
+    if(modalType==='gear'){closeGear();return true;}
+    if(modalType==='treasure'){closeTreasure(false);return true;}
+    if(modalType==='map'){$('back')?.click();return true;}
+    if(modalType==='build'){showMap();return true;}
+    if(game.mode==='win'||game.mode==='lose'){
+      if(game.pendingUpgrade)game.choose('power');
+      game.title();showTitle();return true;
+    }
+    if(game.mode==='play'||game.mode==='pause'){$('pause').click();return true;}
+    return false;
+  }
+};
 
 </script>
 </body></html>

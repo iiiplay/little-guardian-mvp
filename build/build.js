@@ -14,6 +14,7 @@ const sources = {
   CORE_JS: read('src/core.js'),
   RENDER_JS: read('src/render.js'),
   AUDIO_JS: read('src/audio.js'),
+  ANDROID_HOST_JS: read('src/android-host.js'),
   UI_JS: read('src/ui.js'),
   GEAR_UI_JS: read('src/gear-ui.js'),
   TREASURE_UI_JS: read('src/treasure-ui.js'),

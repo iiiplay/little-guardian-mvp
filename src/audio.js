@@ -18,5 +18,5 @@ function createCombatAudio(makeContext=()=>new(window.AudioContext||window.webki
       case 'wave':note(160,90,.2,.2);note(240,140,.22,.14,'triangle',.14);break;
     }
   }
-  return {play,unlock,mute(value){if(master)master.gain.setTargetAtTime(value?0:.32,context.currentTime,.015);},get state(){return context?.state||'locked';}};
+  return {play,unlock,suspend(){if(context?.state==='running')context.suspend().catch(()=>{});},resume(){if(context?.state==='suspended')context.resume().catch(()=>{});},mute(value){if(master)master.gain.setTargetAtTime(value?0:.32,context.currentTime,.015);},get state(){return context?.state||'locked';}};
 }

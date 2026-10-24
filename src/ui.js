@@ -15,8 +15,9 @@ const renderer=createRenderer($('game'),images);
 let preview=DungeonEngine.begin(game.save.unlocked,game.save.perks),lastMode='',modalType='',autoAt=0,toastUntil=0,lastStamp=0,visualTime=0,accumulator=0,soundOn=true,audio=null,returnFocus=null,lastStatus='',lastUiUpdate=0;
 const time=t=>`${Math.floor(t/60).toString().padStart(2,'0')}:${Math.floor(t%60).toString().padStart(2,'0')}`;
 function toast(text){$('toast').textContent=text;$('toast').hidden=false;toastUntil=performance.now()+2400;}
+let hostSuspended=false;
 const combatAudio=createCombatAudio();let hitStop=0,lastHitSerial=0;
-function tone(type){if(!soundOn)return;try{combatAudio.play(type);}catch{soundOn=false;}}
+function tone(type){if(!soundOn||hostSuspended)return;try{combatAudio.play(type);}catch{soundOn=false;}}
 function dialog(html,type){returnFocus=document.activeElement;$('veil').hidden=false;$('dialog').innerHTML=html;modalType=type;lastMode=game.mode;$('dialog').querySelectorAll('[data-open-gear]').forEach(b=>b.onclick=showGear);$('dialog').querySelectorAll('[data-open-spirits]').forEach(b=>b.onclick=showSpirits);$('dialog').querySelectorAll('[data-open-journal]').forEach(b=>b.onclick=showJournal);requestAnimationFrame(()=>$('dialog').querySelector('button:not(:disabled)')?.focus({preventScroll:true}));}
 function closeDialog(){autoAt=0;$('veil').hidden=true;modalType='';returnFocus?.focus?.({preventScroll:true});}
 function bind(id,fn){$(id)?.addEventListener('click',fn);}
@@ -86,6 +87,7 @@ document.addEventListener('keydown',e=>{
   if(e.key==='Tab'&&!$('veil').hidden){const btns=[...$('dialog').querySelectorAll('button:not(:disabled)')],first=btns[0],last=btns.at(-1);if(e.shiftKey&&document.activeElement===first){last.focus();e.preventDefault();}else if(!e.shiftKey&&document.activeElement===last){first.focus();e.preventDefault();}}
 });
 function frame(stamp){
+  if(hostSuspended){lastStamp=0;requestAnimationFrame(frame);return;}
   const dt=lastStamp?Math.min(.1,(stamp-lastStamp)/1000):0;lastStamp=stamp;visualTime+=dt;
   hitStop=Math.max(0,hitStop-dt);if(game.mode==='play'&&hitStop<=0){accumulator+=dt*game.speed;let safety=0;while(accumulator>=1/30&&safety++<8){game.tick(1/30);accumulator-=1/30;if(game.mode!=='play'){accumulator=0;break;}}}
   const s=game.run||preview;if(s.hitSerial!==lastHitSerial){lastHitSerial=s.hitSerial;if(!matchMedia('(prefers-reduced-motion: reduce)').matches)hitStop=s.impactPower>=2?.065:.025;}renderer.draw(s,game.mode==='pause'?s.time:visualTime);syncTargets();
