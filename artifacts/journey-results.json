@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": 84,
+  "migration": 6,
+  "crafted": {
+    "id": 8,
+    "slot": "armor",
+    "rarity": 2,
+    "trait": "thorns",
+    "level": 4,
+    "name": "星紋胸甲"
+  },
+  "tasks": [
+    {
+      "id": "wins",
+      "title": "完成 2 場探險",
+      "goal": 2
+    },
+    {
+      "id": "pickups",
+      "title": "親手撿取 10 件寶物",
+      "goal": 10
+    },
+    {
+      "id": "spells",
+      "title": "施放 2 次星界裁決",
+      "goal": 2
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
-const {E,Q,createGame}=vm.runInNewContext(['engine/engine.js','src/driver.js','src/equipment.js','src/core.js'].map(p=>fs.readFileSync(p,'utf8')).join('\n')+'\n({E:DungeonEngine,Q:Equipment,createGame})',{console,structuredClone});
+const {E,Q,createGame}=vm.runInNewContext(['engine/engine.js','src/driver.js','src/equipment.js','src/journey.js','src/core.js'].map(p=>fs.readFileSync(p,'utf8')).join('\n')+'\n({E:DungeonEngine,Q:Equipment,createGame})',{console,structuredClone});
 let checks=0;const check=(v,m)=>{assert(v,m);checks++;};
 let stored=JSON.stringify({version:4,unlocked:3,cleared:[1,2],perks:{power:2},gold:99,inventory:[{id:1,slot:'weapon',rarity:1,level:3,trait:'chain'}],equipped:{weapon:1}});
 const store={getItem:()=>stored,setItem:(k,v)=>stored=v},g=createGame({engine:E,store});
-check(g.save.version===5&&g.save.gold===99&&g.save.inventory.length===1,'schema 4 migration preserves gear and economy');
+check(g.save.version===6&&g.save.gold===99&&g.save.inventory.length===1,'schema 4 migration preserves gear and economy');
 check(g.save.spirit===null&&!g.selectSpirit('wind')&&!g.selectSpirit('luck'),'locked spirits cannot be selected');
 g.start(3);check(!g.selectSpirit(null),'cannot switch companions during active combat');g.run.status='win';g.tick(.03);
 check(g.save.spirit==='wind'&&g.run.unlockedSpirit==='wind','first stage 3 clear grants and equips wind');

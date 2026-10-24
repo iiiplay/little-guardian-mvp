@@ -9,6 +9,8 @@ const sources = {
   ENGINE_JS: read('engine/engine.js'),
   DRIVER_JS: read('src/driver.js'),
   EQUIPMENT_JS: read('src/equipment.js'),
+  JOURNEY_JS: read('src/journey.js'),
+  JOURNEY_UI_JS: read('src/journey-ui.js'),
   CORE_JS: read('src/core.js'),
   RENDER_JS: read('src/render.js'),
   AUDIO_JS: read('src/audio.js'),

@@ -1,0 +1,124 @@
+{
+  "passed": true,
+  "layouts": [
+    {
+      "name": "mobile",
+      "tab": "tasks",
+      "x": 27.5,
+      "y": 70.828125,
+      "width": 320,
+      "height": 525.34375
+    },
+    {
+      "name": "mobile",
+      "tab": "contracts",
+      "x": 27.5,
+      "y": 41.40625,
+      "width": 320,
+      "height": 584.1875
+    },
+    {
+      "name": "mobile",
+      "tab": "workshop",
+      "x": 27.5,
+      "y": 48.40625,
+      "width": 320,
+      "height": 570.1875
+    },
+    {
+      "name": "desktop",
+      "tab": "tasks",
+      "x": 757,
+      "y": 97.3125,
+      "width": 340,
+      "height": 525.34375
+    },
+    {
+      "name": "desktop",
+      "tab": "contracts",
+      "x": 757,
+      "y": 67.890625,
+      "width": 340,
+      "height": 584.1875
+    },
+    {
+      "name": "desktop",
+      "tab": "workshop",
+      "x": 757,
+      "y": 74.890625,
+      "width": 340,
+      "height": 570.1875
+    },
+    {
+      "name": "small",
+      "tab": "tasks",
+      "x": 24,
+      "y": 54.328125,
+      "width": 272,
+      "height": 459.328125
+    },
+    {
+      "name": "small",
+      "tab": "contracts",
+      "x": 24,
+      "y": 20.59375,
+      "width": 272,
+      "height": 526.828125
+    },
+    {
+      "name": "small",
+      "tab": "workshop",
+      "x": 24,
+      "y": 21.84375,
+      "width": 272,
+      "height": 524.328125
+    }
+  ],
+  "rounds": [
+    {
+      "seconds": 27.900000000000546,
+      "stats": {
+        "assists": 9,
+        "interrupts": 0,
+        "bursts": 3,
+        "barrels": 1,
+        "ultimates": 2
+      },
+      "reward": {
+        "gold": 20,
+        "marks": 1
+      },
+      "manual": 8
+    },
+    {
+      "seconds": 29.46666666666729,
+      "stats": {
+        "assists": 8,
+        "interrupts": 1,
+        "bursts": 2,
+        "barrels": 0,
+        "ultimates": 2
+      },
+      "reward": {
+        "gold": 20,
+        "marks": 0
+      },
+      "manual": 10
+    }
+  ],
+  "resources": {
+    "before": {
+      "gold": 708,
+      "marks": 1
+    },
+    "after": {
+      "gold": 798,
+      "marks": 5
+    },
+    "saved": {
+      "gold": 678,
+      "marks": 1
+    }
+  },
+  "errors": []
+}

@@ -1,6 +1,6 @@
 const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('assert/strict');
 const root=path.resolve(__dirname,'..');
-const source=['engine/engine.js','src/driver.js','src/equipment.js','src/core.js'].map(p=>fs.readFileSync(path.join(root,p),'utf8')).join('\n');
+const source=['engine/engine.js','src/driver.js','src/equipment.js','src/journey.js','src/core.js'].map(p=>fs.readFileSync(path.join(root,p),'utf8')).join('\n');
 const api=vm.runInNewContext(source+'\n({E:DungeonEngine,Q:Equipment,createGame})',{console,structuredClone});
 const {E,Q,createGame}=api;
 let assertions=0;const check=(condition,message)=>{assert(condition,message);assertions++;};

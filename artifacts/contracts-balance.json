@@ -1,0 +1,1849 @@
+{
+  "passed": true,
+  "summary": [
+    {
+      "contract": "wind",
+      "mode": "watch",
+      "wins": 11,
+      "runs": 30,
+      "meanSeconds": 46.7
+    },
+    {
+      "contract": "wind",
+      "mode": "active",
+      "wins": 30,
+      "runs": 30,
+      "meanSeconds": 23.8
+    },
+    {
+      "contract": "thorns",
+      "mode": "watch",
+      "wins": 10,
+      "runs": 30,
+      "meanSeconds": 46
+    },
+    {
+      "contract": "thorns",
+      "mode": "active",
+      "wins": 30,
+      "runs": 30,
+      "meanSeconds": 31.6
+    },
+    {
+      "contract": "surge",
+      "mode": "watch",
+      "wins": 10,
+      "runs": 30,
+      "meanSeconds": 43.4
+    },
+    {
+      "contract": "surge",
+      "mode": "active",
+      "wins": 30,
+      "runs": 30,
+      "meanSeconds": 24.2
+    }
+  ],
+  "runs": [
+    {
+      "contract": "wind",
+      "level": 3,
+      "seed": 1,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 50.9,
+      "minRatio": 0.878,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 3,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.3,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 3,
+      "seed": 2,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 51,
+      "minRatio": 0.88,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 3,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.3,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 3,
+      "seed": 3,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 51.2,
+      "minRatio": 0.91,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 3,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.3,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 3,
+      "seed": 4,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 50.5,
+      "minRatio": 0.88,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 3,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.3,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 3,
+      "seed": 5,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 51.3,
+      "minRatio": 0.91,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 3,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.3,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 6,
+      "seed": 1,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 50.9,
+      "minRatio": 0.758,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 6,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23,
+      "minRatio": 0.964,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 6,
+      "seed": 2,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 50.9,
+      "minRatio": 0.711,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 6,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23,
+      "minRatio": 0.964,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 6,
+      "seed": 3,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 51.4,
+      "minRatio": 0.711,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 6,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23,
+      "minRatio": 0.964,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 6,
+      "seed": 4,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 50.3,
+      "minRatio": 0.664,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 6,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23,
+      "minRatio": 0.964,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 6,
+      "seed": 5,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 50.8,
+      "minRatio": 0.711,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 6,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23,
+      "minRatio": 0.964,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 10,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 42.8,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 10,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.8,
+      "minRatio": 0.966,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 10,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 50.8,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 10,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.8,
+      "minRatio": 0.966,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 10,
+      "seed": 3,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 61.1,
+      "minRatio": 0.031,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 10,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.8,
+      "minRatio": 0.966,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 10,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 41.9,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 10,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.8,
+      "minRatio": 0.966,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 10,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 45.9,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 10,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.8,
+      "minRatio": 0.966,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 11,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 49.4,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 11,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.4,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 11,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 50,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 11,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24.8,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 11,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 48.2,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 11,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24.8,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 11,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 47.8,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 11,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24.8,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 11,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 48.7,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 11,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24.4,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 15,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 42.9,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 15,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.8,
+      "minRatio": 0.969,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 15,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 36.3,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 15,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.8,
+      "minRatio": 0.969,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 15,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 42.5,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 15,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.8,
+      "minRatio": 0.969,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 15,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 32.5,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 15,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.6,
+      "minRatio": 0.969,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 15,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 43.6,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 15,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24.1,
+      "minRatio": 0.969,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 20,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 32.3,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 20,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24.5,
+      "minRatio": 0.971,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 20,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 44.7,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 20,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24.5,
+      "minRatio": 0.971,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 20,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 44.7,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 20,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24.5,
+      "minRatio": 0.971,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 20,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 42.1,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 20,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.4,
+      "minRatio": 0.971,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 20,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 43.4,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "wind",
+      "level": 20,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 26.9,
+      "minRatio": 0.971,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 3,
+      "seed": 1,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 61.6,
+      "minRatio": 0.899,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 3,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.8,
+      "minRatio": 0.986,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 3,
+      "seed": 2,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 61.5,
+      "minRatio": 0.926,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 3,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.8,
+      "minRatio": 0.986,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 3,
+      "seed": 3,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 62.5,
+      "minRatio": 0.902,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 3,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.8,
+      "minRatio": 0.986,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 3,
+      "seed": 4,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 61.3,
+      "minRatio": 0.949,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 3,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.8,
+      "minRatio": 0.986,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 3,
+      "seed": 5,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 61.2,
+      "minRatio": 0.949,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 3,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.8,
+      "minRatio": 0.986,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 6,
+      "seed": 1,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 65.8,
+      "minRatio": 0.646,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 6,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 26.5,
+      "minRatio": 0.964,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 6,
+      "seed": 2,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 65.4,
+      "minRatio": 0.615,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 6,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 26.5,
+      "minRatio": 0.964,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 6,
+      "seed": 3,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 65.9,
+      "minRatio": 0.654,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 6,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 26.5,
+      "minRatio": 0.964,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 6,
+      "seed": 4,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 65.7,
+      "minRatio": 0.654,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 6,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 26.5,
+      "minRatio": 0.964,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 6,
+      "seed": 5,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 65.4,
+      "minRatio": 0.616,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 6,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 26.5,
+      "minRatio": 0.964,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 10,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 45.9,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 10,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 36.8,
+      "minRatio": 0.786,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 10,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 47.7,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 10,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 36.8,
+      "minRatio": 0.786,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 10,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 46.1,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 10,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 36.8,
+      "minRatio": 0.786,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 10,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 47,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 10,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 36.8,
+      "minRatio": 0.786,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 10,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 46.7,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 10,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 36.8,
+      "minRatio": 0.786,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 11,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 34.3,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 11,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 38,
+      "minRatio": 0.703,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 11,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 34.1,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 11,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 38,
+      "minRatio": 0.703,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 11,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 35.5,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 11,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 38,
+      "minRatio": 0.703,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 11,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 34.7,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 11,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 38,
+      "minRatio": 0.703,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 11,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 36.1,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 11,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 38,
+      "minRatio": 0.703,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 15,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 33.9,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 15,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 30.7,
+      "minRatio": 0.907,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 15,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 35.1,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 15,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 30.7,
+      "minRatio": 0.907,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 15,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 35.5,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 15,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 30.7,
+      "minRatio": 0.907,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 15,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 35.6,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 15,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 30,
+      "minRatio": 0.907,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 15,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 34.7,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 15,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 26.9,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 20,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 32.1,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 20,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 32.2,
+      "minRatio": 0.892,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 20,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 31.3,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 20,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 32.2,
+      "minRatio": 0.892,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 20,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 32.1,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 20,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 32.2,
+      "minRatio": 0.892,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 20,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 32.1,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 20,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 32.7,
+      "minRatio": 0.892,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 20,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 32.1,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "thorns",
+      "level": 20,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 35.4,
+      "minRatio": 0.804,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 3,
+      "seed": 1,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 56.3,
+      "minRatio": 0.817,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 3,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.3,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 3,
+      "seed": 2,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 56.1,
+      "minRatio": 0.797,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 3,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.3,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 3,
+      "seed": 3,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 56.2,
+      "minRatio": 0.817,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 3,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.3,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 3,
+      "seed": 4,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 56.2,
+      "minRatio": 0.797,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 3,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.3,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 3,
+      "seed": 5,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 56.5,
+      "minRatio": 0.817,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 3,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.3,
+      "minRatio": 1,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 6,
+      "seed": 1,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 57,
+      "minRatio": 0.536,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 6,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.9,
+      "minRatio": 0.957,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 6,
+      "seed": 2,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 56.9,
+      "minRatio": 0.598,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 6,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.9,
+      "minRatio": 0.957,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 6,
+      "seed": 3,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 56.6,
+      "minRatio": 0.598,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 6,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.9,
+      "minRatio": 0.957,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 6,
+      "seed": 4,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 56.6,
+      "minRatio": 0.598,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 6,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.9,
+      "minRatio": 0.957,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 6,
+      "seed": 5,
+      "mode": "watch",
+      "status": "win",
+      "seconds": 57.2,
+      "minRatio": 0.554,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 6,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.9,
+      "minRatio": 0.957,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 10,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 40.4,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 10,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.8,
+      "minRatio": 0.959,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 10,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 40.6,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 10,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.8,
+      "minRatio": 0.959,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 10,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 47.3,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 10,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.8,
+      "minRatio": 0.959,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 10,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 40.6,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 10,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.8,
+      "minRatio": 0.959,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 10,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 41.3,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 10,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.8,
+      "minRatio": 0.959,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 11,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 47.8,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 11,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 27.1,
+      "minRatio": 0.854,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 11,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 48.7,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 11,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 27.1,
+      "minRatio": 0.854,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 11,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 48.6,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 11,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 27.1,
+      "minRatio": 0.854,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 11,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 40.1,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 11,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 27.1,
+      "minRatio": 0.854,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 11,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 48.3,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 11,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.7,
+      "minRatio": 0.894,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 15,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 28.9,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 15,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.5,
+      "minRatio": 0.962,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 15,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 28.8,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 15,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.5,
+      "minRatio": 0.962,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 15,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 29.6,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 15,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.5,
+      "minRatio": 0.962,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 15,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 29.2,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 15,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 22.6,
+      "minRatio": 0.962,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 15,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 29.6,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 15,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 23.3,
+      "minRatio": 0.869,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 20,
+      "seed": 1,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 28.8,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 20,
+      "seed": 1,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24.7,
+      "minRatio": 0.964,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 20,
+      "seed": 2,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 29.3,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 20,
+      "seed": 2,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24.7,
+      "minRatio": 0.964,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 20,
+      "seed": 3,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 29.3,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 20,
+      "seed": 3,
+      "mode": "active",
+      "status": "win",
+      "seconds": 24.7,
+      "minRatio": 0.964,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 20,
+      "seed": 4,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 28.7,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 20,
+      "seed": 4,
+      "mode": "active",
+      "status": "win",
+      "seconds": 25.3,
+      "minRatio": 0.964,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 20,
+      "seed": 5,
+      "mode": "watch",
+      "status": "lose",
+      "seconds": 29.1,
+      "minRatio": 0,
+      "rescues": 0
+    },
+    {
+      "contract": "surge",
+      "level": 20,
+      "seed": 5,
+      "mode": "active",
+      "status": "win",
+      "seconds": 26,
+      "minRatio": 0.86,
+      "rescues": 0
+    }
+  ]
+}
